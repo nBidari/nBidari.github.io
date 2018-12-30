@@ -35,7 +35,8 @@
 
 
 	<font FACE = "Comic Sans MS">
-		This is <b> bold </b> <br>
+		
+		<p id = "fontStyles">This is <b> bold </b> <br>
 		This is <i> Italic </i> <br>
 		This is <u> underline</u> <br>
 		This is <tt> Monospaced</tt> <br>
@@ -47,8 +48,17 @@
 		This is even<small><small> smaller</small></small> <br>
 		This is <sup> superscript</sup> <br>
 		This is <sub> subscript</sub> <br>
+
+		</p>
 	</font>
 
+	<br>
+	<button type = "button" onclick = 'document.getElementById("fontStyles").innerHTML = ""'><b>DELETE ALL</b></button>
+	<br>
+	<button type = "button" onclick = 'document.getElementById("fontStyles").style.fontSize = '35px''> BIGGER </button>
+	<br>
+	<button type = "button" onclick = 'document.getElementById("fontStyles").style.fontSize = 2px'> <sup><i>smaller</i></sup> </button>
+	<br>
 	<a href="overwatch-montage.html"> Literally Pine</a>
 
 
