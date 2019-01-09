@@ -2,7 +2,11 @@
 <html>
 <head>
 	<title>nBidari Homepage</title>
+<<<<<<< HEAD
 	<base href="http://www.nBidari.github.io">
+=======
+	<base href="/index.html" >
+>>>>>>> 552f18112a4f39c83045c98301b3b96f796ef713
 	<meta charset="utf-8"; http-equiv="keywords", content="Nima Bidari, nBidari, nBidari homepage, Bidari, Nima">
 
 	<style type="text/css">
@@ -35,7 +39,8 @@
 
 
 	<font FACE = "Comic Sans MS">
-		This is <b> bold </b> <br>
+		
+		<p id = "fontStyles">This is <b> bold </b> <br>
 		This is <i> Italic </i> <br>
 		This is <u> underline</u> <br>
 		This is <tt> Monospaced</tt> <br>
@@ -47,9 +52,18 @@
 		This is even<small><small> smaller</small></small> <br>
 		This is <sup> superscript</sup> <br>
 		This is <sub> subscript</sub> <br>
+
+		</p>
 	</font>
 
-	<a href="overwatch-montage.html"> Literally Pine</a>
+	<br>
+	<button type = "button" onclick = 'document.getElementById("fontStyles").innerHTML = ""'><b>DELETE ALL</b></button>
+	<br>
+	<button type = "button" onclick = 'document.getElementById("fontStyles").style.fontSize = '35px''> BIGGER </button>
+	<br>
+	<button type = "button" onclick = 'document.getElementById("fontStyles").style.fontSize = 2px'> <sup><i>smaller</i></sup> </button>
+	<br>
+	<a href="./overwatch-montage.html" target = "_blank"> Literally Pine</a>
 
 	<script src = "assets/js/javascript.js"></script>
 
