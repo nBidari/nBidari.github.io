@@ -9,6 +9,21 @@
 	  font-family: Arial, Helvetica, sans-serif;
 	}
 
+	.home {
+
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		z-index: 2000;
+	}
+
+	.btn {
+		background-color: lightgrey;
+		border-radius: 20px;
+		font-size: 20px;
+
+	}
+
 	.flip-box {
 	  background-color: transparent;
 	  width: 300px;
@@ -52,10 +67,16 @@
 </head>
 <body>
 
+<div class = "home">
+		<form action = "../index.html">
+			<input class = "btn" type="submit" value = "HOME">
+		</form>
+</div>
+
 <div class="flip-box">
   <div class="flip-box-inner">
     <div class="flip-box-front">
-      <img src="images/1-ZeroPoverty.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      <img src="images/UNSustGoals1.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
     </div>
     <div class="flip-box-back">
       <h3>No Poverty</h3>
