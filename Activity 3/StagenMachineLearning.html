@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+
+
+	<title>Stage n Machine Learning</title>
+
+	<style>
+		
+		.home {
+
+	    	position: fixed;
+	    	top: 10px;
+	    	right: 10px;
+	    	z-index: 2;
+		}
+
+		.btn {
+			background-color: lightgrey;
+		    border-radius: 20px;
+		    font-size: 20px;
+
+		}
+
+		.center {
+    		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 100%;
+ 		}
+
+	</style>
+</head>
+<body>
+
+<div class = "home">
+    <form action = "../index.html">
+      <input class = "btn" type="submit" value = "HOME">
+    </form>
+</div>
+
+<img class = "foodImage" src="https://samples.clarifai.com/food.jpg">
+
+	<script>
+
+		const app = new Clarifai.App({
+		 apiKey: '16c82e7df86846feb7d9b7ea4bdd61a9'
+		});
+
+
+		app.models.predict("bd367be194cf45149e75f01d59f77ba7", "https://samples.clarifai.com/food.jpg").then(
+	    function(response) {
+	      // do something with response
+	      console.log(response)
+	      
+
+	    },
+	    function(err) {
+	      // there was an error
+
+	      console.log("INVALID")
+	    }
+  			);
+
+
+	</script>
+
+</body>
+</html>
