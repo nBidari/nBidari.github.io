@@ -2,11 +2,18 @@
 <html>
 <head>
 	<script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
 
 	<title>Stage n Machine Learning</title>
 
 	<style>
+
+		body {
+			background-color: #e0edff;
+
+			font-family: Times New Roman, Arial, Helvetica, sans-serif;
+		}
 		
 		.home {
 
@@ -30,6 +37,45 @@
     		width: 100%;
  		}
 
+ 		#dataButton {
+ 			position: fixed;
+ 			top: 10px;
+ 			right: 100px;
+ 			z-index: 2;
+ 		}
+
+ 		#dataNameDisplay {
+ 			float: right;
+ 			position: relative;
+ 			top: 30px;
+ 			right: 650px;
+ 			z-index: 3;
+
+ 			font-family: 'Staatliches', cursive;
+ 			font-size: 20px;
+ 		}
+
+ 		#dataValueDisplay {
+ 			float: right;
+ 			position: relative;
+ 			top: 30px;
+ 			right: 420px;
+ 			z-index: 3;
+ 			font-family: 'Staatliches', cursive;
+ 			font-size: 20px;
+ 		}
+
+ 		#foodPicture {
+ 			position: absolute;
+ 			top: 20px;
+
+ 			padding: 10px;
+ 			border-width: 10px;
+ 			border-style: solid;
+ 			border-color: #80b3ff;
+ 			border-image-outset: 10px;
+ 		}
+
 	</style>
 </head>
 <body>
@@ -40,20 +86,46 @@
     </form>
 </div>
 
-<img class = "foodImage" src="https://samples.clarifai.com/food.jpg">
+<div id = "dataButton">
+	<input class = "btn" type="submit" value="WHAT ARE MY RESULTS?" onclick = dataAlert()>
+</div>
 
+
+<div class = text-Back>
+	<div id = "dataNameDisplay">
+	   </div>
+	
+	<div id = "dataValueDisplay">
+	   </div>
+</div>
+
+
+<div id = "foodPicture">
+	<img src="https://samples.clarifai.com/food.jpg">
+</div>
 	<script>
 
 		const app = new Clarifai.App({
 		 apiKey: '16c82e7df86846feb7d9b7ea4bdd61a9'
 		});
 
+		var specData
+		var responseList
+
+		var dataName = []
+		var dataValue = []
+
+		var hasDataBeenDisplayed = false
+
+		function capitalizeFirstLetter(string) {
+   			return string.charAt(0).toUpperCase() + string.slice(1);
+		}
 
 		app.models.predict("bd367be194cf45149e75f01d59f77ba7", "https://samples.clarifai.com/food.jpg").then(
 	    function(response) {
 	      // do something with response
-	      console.log(response)
-	      
+	      responseList = response
+	      console.log(responseList)
 
 	    },
 	    function(err) {
@@ -62,6 +134,32 @@
 	      console.log("INVALID")
 	    }
   			);
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		function dataAlert() {
+
+			if (hasDataBeenDisplayed == false) {
+
+				for (var i = 0; i < 20; i++) {
+					
+					dataName.push(capitalizeFirstLetter(responseList.rawData.outputs[0].data.concepts[i].name))
+					dataValue.push(Math.round(responseList.rawData.outputs[0].data.concepts[i].value * 10000)/100)
+
+					document.getElementById("dataNameDisplay").innerHTML +=  dataName[i] + "<br>"
+					document.getElementById("dataValueDisplay").innerHTML +=  dataValue[i] + " % <br>"
+				}
+
+				hasDataBeenDisplayed = true
+			} else {
+				alert("Data has already been displayed!")
+			}
+
+			
+
+		}
+
+
 
 
 	</script>
