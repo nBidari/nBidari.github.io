@@ -14,6 +14,11 @@
 
 			font-family: Times New Roman, Arial, Helvetica, sans-serif;
 		}
+
+		table, td, th {
+	    	border: 5px solid #4f7ee6;
+	    	padding: 10px;
+	    } 
 		
 		.home {
 
@@ -44,37 +49,54 @@
  			z-index: 2;
  		}
 
- 		#dataNameDisplay {
- 			float: right;
- 			position: relative;
- 			top: 30px;
- 			right: 650px;
+ 		#dataTable {
  			z-index: 3;
+
+ 			visibility: hidden;
+
+ 			display: block;
+      		margin-left:41.9%; 
+    		margin-right:41.9%;
 
  			font-family: 'Staatliches', cursive;
  			font-size: 20px;
  		}
 
- 		#dataValueDisplay {
- 			float: right;
- 			position: relative;
- 			top: 30px;
- 			right: 420px;
- 			z-index: 3;
- 			font-family: 'Staatliches', cursive;
- 			font-size: 20px;
+ 		#foodPictureBorder {
+ 			position: absolute;
+ 			top: 40px;
+
+ 			width: auto;
+ 			height: auto;
  		}
 
  		#foodPicture {
- 			position: absolute;
- 			top: 20px;
 
- 			padding: 10px;
+ 			width: 70%;
+ 			height: auto;
+
+ 			display: block;
+      		margin-left: auto;
+      		margin-right: auto;
+
+      		padding: 10px;
  			border-width: 10px;
  			border-style: solid;
  			border-color: #80b3ff;
  			border-image-outset: 10px;
+
+
+
  		}
+
+ 		hr {
+			height: 20px;
+			background: url(http://ibrahimjabbari.com/english/images/hr-11.png) 
+
+		repeat-x 0 0;
+    	border: 0;
+
+		}
 
 	</style>
 </head>
@@ -90,19 +112,22 @@
 	<input class = "btn" type="submit" value="WHAT ARE MY RESULTS?" onclick = dataAlert()>
 </div>
 
-
-<div class = text-Back>
-	<div id = "dataNameDisplay">
-	   </div>
-	
-	<div id = "dataValueDisplay">
-	   </div>
+<div class = "center">
+	<img id = "foodPicture" src="https://samples.clarifai.com/food.jpg">
 </div>
 
+<hr>
 
-<div id = "foodPicture">
-	<img src="https://samples.clarifai.com/food.jpg">
-</div>
+<table id = "dataTable">
+	<tr style = "font-size: 25px">
+		<td>Ingredient</th>
+		<td>Probability</th>
+	</tr>
+</table>
+
+</table>
+
+
 	<script>
 
 		const app = new Clarifai.App({
@@ -139,19 +164,40 @@
 
 		function dataAlert() {
 
+			document.getElementById("dataTable").style.visibility = "visible"
+
+			var table = document.getElementById("dataTable")
+
+			var row
+			var nameCell
+			var valueCell
+
+
 			if (hasDataBeenDisplayed == false) {
+				
+				document.getElementById("dataTable").style.fontSize = "20px"
 
 				for (var i = 0; i < 20; i++) {
+
+					row = table.insertRow(1)
+					nameCell = row.insertCell(0)
+					valueCell = row.insertCell(1)
 					
 					dataName.push(capitalizeFirstLetter(responseList.rawData.outputs[0].data.concepts[i].name))
 					dataValue.push(Math.round(responseList.rawData.outputs[0].data.concepts[i].value * 10000)/100)
 
-					document.getElementById("dataNameDisplay").innerHTML +=  dataName[i] + "<br>"
-					document.getElementById("dataValueDisplay").innerHTML +=  dataValue[i] + " % <br>"
+					nameCell.innerHTML = dataName[i]
+					nameCell.style.display = "block"
+
+					valueCell.innerHTML = dataValue[i]
 				}
 
 				hasDataBeenDisplayed = true
+
+				document.getElementById("dataTable").scrollIntoView()
+
 			} else {
+				document.getElementById("dataTable").scrollIntoView()
 				alert("Data has already been displayed!")
 			}
 
