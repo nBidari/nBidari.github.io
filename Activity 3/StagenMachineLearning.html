@@ -53,13 +53,15 @@
  			z-index: 3;
 
  			visibility: hidden;
-
- 			display: block;
-      		margin-left:41.9%; 
-    		margin-right:41.9%;
+ 			float: center;
 
  			font-family: 'Staatliches', cursive;
  			font-size: 20px;
+ 		}
+
+ 		#dataTablePosition {
+ 			position: relative;
+ 			left: 200px;
  		}
 
  		#foodPictureBorder {
@@ -117,13 +119,14 @@
 </div>
 
 <hr>
-
-<table id = "dataTable">
-	<tr style = "font-size: 25px">
-		<td>Ingredient</th>
-		<td>Probability</th>
-	</tr>
-</table>
+<div id = "dataTablePosition">
+	<table id = "dataTable">
+		<tr style = "font-size: 25px">
+			<td>Ingredient</th>
+			<td>Probability</th>
+		</tr>
+	</table>
+</div>
 
 </table>
 
