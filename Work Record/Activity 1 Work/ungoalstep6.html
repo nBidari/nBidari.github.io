@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UN Goals Step 4</title>
 
+	<title>UN Goals Step 6</title>
 
 <style>
 	body {
@@ -14,7 +14,7 @@
     position: fixed;
     top: 10px;
     right: 10px;
-    z-index: 2000;
+    z-index: 2;
   }
 
   .btn {
@@ -68,6 +68,7 @@
     background-color: DodgerBlue;
     align-content: center;
     justify-content: center;
+    margin-top: 190px;
   }
 
   .flex-container > div {
@@ -75,15 +76,46 @@
     margin: 5px;
     padding: 15px;
     font-size: 22px;
-  	}
+  }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+
+    .topbar {
+
+      overflow-color: white;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+  }
+
 </style>
 
 
 </head>
+
+
+
+
+
 <body>
 
+<div class = "topbar">  
+  <picture>
+    <source media="(min-width: 940px)" srcset="images/logoHorizontal.png">
+    <img class="center" src="images/logoSquare.png" alt="Flowers" style="width:auto;">
+  </picture>
+</div>
+
 <div class = "home">
-    <form action = "../index.html">
+    <form action = "../WRindex.html">
       <input class = "btn" type="submit" value = "HOME">
     </form>
 </div>
