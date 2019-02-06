@@ -1,14 +1,48 @@
-.workRcrd {
 
+
+
+/*TOPBAR*/
+
+.topBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #0D164C;
 	position: fixed;
-	top: 10px;
-	right: 10px;
-	z-index: 2;
+	top: 0;
+	width: 100%;
 }
 
-.workBtn {
-	background-color: lightgrey;
-	border-radius: 20px;
-	font-size: 20px;
+li {
+	float: left;
+	cursor: pointer;
+}
 
+li a {
+	display: block;
+	color: #2CEEFF;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
+
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+li:hover:not(.topBaractive) {
+	background-color: #080E30;
+}
+
+li:focus {
+	outline: 1px solid #080E30;
+    outline-offset: -4px;
+}
+
+li:active{
+	transform: scale(0.95);
+}
+
+.topBarActive {
+	background-color: #4CAF50;
 }
