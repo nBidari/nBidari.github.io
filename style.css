@@ -1,6 +1,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
+	background-color: #e1e4e4;
 }
 
 
@@ -10,11 +11,18 @@ html, body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;
 	background-color: #0D164C;
 	position: fixed;
 	top: 0;
 	width: 100%;
+}
+
+.topBar a {
+	float: left;
+	color: #2CEEFF;
+	text-align: left;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 li {
@@ -29,7 +37,7 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
 
-	font-size: 20px;
+	font-size: 23px;
 	letter-spacing: 1px;
 
 	font-family: "Staatliches";
@@ -48,9 +56,52 @@ li:active{
 	transform: scale(0.95);
 }
 
-.topBarActive {
-	background-color: #4CAF50;
+/*DROPDOWN MENU*/
+.dropDown {
+	float: left;
+	overflow: hidden;
 }
+
+.dropDown .dropBtn { 
+	border: none;
+	outline: none;
+	padding: 14px 16px;
+	margin: 0;
+}
+
+.topBar a:hover, dropDown:hover .dropBtn {
+	background-color: #080E30;
+}
+
+.dropDown-content {
+	display: none;
+	position: absolute;
+
+	top: 50px;
+
+	background-color: #080E30;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+
+	font-family: "Staatliches";
+}
+
+.dropDown-content a {
+	float: left;
+	color: #2CEEFF;
+
+	font-size: 18px;
+}
+
+.dropDown-content a:hover {
+	background-color: #080E30;
+}
+
+.dropDown:hover .dropDown-content {
+	display:block;
+}
+
 
 /*PARALLAX EFFECT*/
 .parallaxBackground {

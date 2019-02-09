@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang = "en">
 
 <head>
   <!-- Own CSS -->
@@ -10,29 +10,6 @@
 
   <title>Nima Bidari</title>
 
-  <style>
-    body {
-      background-color: #e1e4e4;
-    }
-
-    #backgroundGradient {
-    	width: 100%;
-    	height: 800px;
-
-      background-image: linear-gradient(lightblue, #e1e4e4);
-    }
-
-    #gameBar {
-    	width: 100%;
-    	height: 400px;
-
-    	background-image: linear-gradient(#e1e4e4,#b1b3b3);
-    }
-
-    #gameButton {
-
-    }
-  </style>
 
 
 </head>
@@ -42,20 +19,20 @@
 <body>
 
 <ul class = "topBar">
-    <li><a class="active" onclick = alreadyOnPage()>Home</a></li>
-    <li><a class="active" href="contact.html">Contact</a></li>
-    <li><a class="active" href="Work Record/WRindex.html">Work Record</a></li>
+    <li><a onclick = alreadyOnPage()>Home</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="Work Record/WRindex.html">Work Record</a></li>
+
+    <div class = "dropDown">
+      <li><a class = "dropBtn">Games</a></li>
+
+      <div class = "dropDown-content">
+        <a href="flappyBird/flappyBird.html">Flappy Bird</a>
+      </div>
+
+    </div>
+
 </ul>
-
-
-
-<div id = "backgroundGradient">
-</div>
-
-<div id = "gameBar">
-	<a id = "gameButton">InsertGameHere</a>
-</div>
-
 
 <script src = "script.js">
 	</script>
