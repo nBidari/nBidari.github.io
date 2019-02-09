@@ -67,10 +67,13 @@ li:active{
 	outline: none;
 	padding: 14px 16px;
 	margin: 0;
+
+	cursor: default;
 }
 
 .topBar a:hover, dropDown:hover .dropBtn {
 	background-color: #080E30;
+	cursor: pointer;
 }
 
 .dropDown-content {
@@ -100,6 +103,7 @@ li:active{
 
 .dropDown:hover .dropDown-content {
 	display:block;
+	cursor: pointer;
 }
 
 
