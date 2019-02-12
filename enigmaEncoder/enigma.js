@@ -67,10 +67,10 @@ Pseudo:
 //For now there are only 3 rotors
 
 
-alphabet = "abcdefghijklmnopqrstuvwxyz"
-enigmaBlueprint =  ["JGDQOXUSCAMIFRVTPNEWKBLZYH", //These are Rotors 1-3/5 of the German Railway (Rocket) introduced on Feb 7 1941
-					"NTZPSFBOKMWRCJDIVLAEYUXHGQ", //The other 2 are the UKW and ETW rotors
-					"JVIUBHTCDYAKEQZPOSGXNRMWFL"
+alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+enigmaBlueprint =  [['J','G','D','Q','O','X','U','S','C','A','M','I','F','R','V','T','P','N','E','W','K','B','L','Z','Y','H'], //These are Rotors 1-3/5 of the German Railway (Rocket) introduced on Feb 7 1941
+					['N','T','Z','P','S','F','B','O','K','M','W','R','C','J','D','I','V','L','A','E','Y','U','X','H','G','Q'], //The other 2 are the UKW and ETW rotors
+					['J','V','I','U','B','H','T','C','D','Y','A','K','E','Q','Z','P','O','S','G','X','N','R','M','W','F','L']
 				]
 enigmaAlpha = []
 
