@@ -36,7 +36,7 @@ Pseudo:
 	Shift Function (shift number, rotor):
 		Shift all alphabets by one
 
-		if (letter at start of blueprint list == letter at end of alpha list) {
+		if (letter at start of blueprint list == letter at end of alpha list) { ***UPDATE: Doesnt matter because of how the shift function was made***
 			reset alpha list
 		}else {
 			Shift alpha by one
@@ -62,10 +62,7 @@ Pseudo:
 
 */
 
-
-
 //For now there are only 3 rotors
-
 
 alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 enigmaBlueprint =  [['J','G','D','Q','O','X','U','S','C','A','M','I','F','R','V','T','P','N','E','W','K','B','L','Z','Y','H'], //These are Rotors 1-3/5 of the German Railway (Rocket) introduced on Feb 7 1941
@@ -73,23 +70,110 @@ enigmaBlueprint =  [['J','G','D','Q','O','X','U','S','C','A','M','I','F','R','V'
 					['J','V','I','U','B','H','T','C','D','Y','A','K','E','Q','Z','P','O','S','G','X','N','R','M','W','F','L']
 				]
 enigmaAlpha = []
-
-start = true
+plugBoard = [["",""],
+			 ["",""],
+			 ["",""],
+			 ["",""],
+			 ["",""],
+			 ["",""],
+			 ["",""],
+			 ["",""],
+			 ["",""],
+			 ["",""]
+			]
+/*plugBoard = [["A","B"],
+			 ["C","D"],
+			 ["E","F"],
+			 ["G","H"],
+			 ["I","J"],
+			 ["K","L"],
+			 ["M","N"],
+			 ["O","P"],
+			 ["Q","R"],
+			 ["S","T"]
+			]
+*/ 
 
 initializeRotors = function(r1, r2, r3, r1v, r2v, r3v) {
 	enigmaAlpha.push(enigmaBlueprint[r1-1], enigmaBlueprint[r2-1], enigmaBlueprint[r3-1])
 
+
+	shiftFnc(1,r1v)
+	shiftFnc(2,r2v)
+	shiftFnc(3,r3v)
 }
 
 shiftFnc = function(rotor, rVal) {
-	var firstLetter = ""
+	var lastLetter = ""
 	var enigmaList = enigmaAlpha[rotor-1]
 
 	for (var i = 0; i < rVal; i++) {
 		lastLetter = enigmaList[0]
 		
-		enigmaList.pop()
+		enigmaList.shift()
 
-		enigmaList.push(firstLetter)
+		enigmaList.push(lastLetter)
 	}
+}
+
+encryptFnc = function(inputChar, rotor) {
+	var outputChar = ''
+	var indexChar = ''
+
+	for (var j = 0; j < 25; j++) {
+		if (alphabet[j] == inputChar) {
+			indexChar = j
+		}
+	}
+
+	outputChar = enigmaAlpha[rotor-1][indexChar]
+
+	return outputChar
+}
+
+plugBoardFnc = function(inputChar, plugList) {
+
+	for (var k = 0; k < 10; k++) {
+		if (inputChar == plugList[k][0]) {
+			return plugList[k][1]
+		}else if (inputChar == plugList[k][1]) {
+			return plugList[k][0]
+		}
+	}
+
+	return inputChar
+}
+
+enigmaEncode = function(inputStr, r1, r2, r3, r1v, r2v, r3v, plugList) {
+	/* PSEUDO CODE
+		Input -> rotor 1 -> shift -> rotor 2 -> shift -> rotor 3 -> shift -> plugboard -> output
+	*/
+
+	var outputStr = ""
+	var outputChar = ''
+
+	initializeRotors(r1,r2,r3,r1v,r2v,r3v)
+
+	for (var l = 0; l < inputStr.length; l++) {
+		outputChar = encryptFnc(inputStr[l],1)
+		shiftFnc(1,1)
+
+		outputChar = encryptFnc(outputChar,2)
+		shiftFnc(2,1)
+
+		outputChar = encryptFnc(outputChar,3)
+		shiftFnc(3,1)
+
+		plugBoardFnc(outputChar, plugList)
+
+		outputStr += outputChar
+	}
+
+	return outputStr
+	resetFnc()
+}
+
+resetFnc = function() {
+	enigmaAlpha = []
+	plugBoard = []
 }
