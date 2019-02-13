@@ -104,15 +104,15 @@ initializeRotors = function(r1, r2, r3, r1v, r2v, r3v) {
 }
 
 shiftFnc = function(rotor, rVal) {
-	var lastLetter = ""
+	var firstLetter = ""
 	var enigmaList = enigmaAlpha[rotor-1]
 
 	for (var i = 0; i < rVal; i++) {
-		lastLetter = enigmaList[0]
+		firstLetter = enigmaList[0]
 		
 		enigmaList.shift()
 
-		enigmaList.push(lastLetter)
+		enigmaList.push(firstLetter)
 	}
 }
 
