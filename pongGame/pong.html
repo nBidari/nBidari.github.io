@@ -1,19 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang = "en">
+
 <head>
+  <!-- Own CSS -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="pong.css">
 
-	<!-- Own CSS -->
-	<link rel="stylesheet" href="../style.css">
-	<link rel="stylesheet" href="enigma.css">
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 
-	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-	
-	<title>Engima Encoder</title>
+  <title>Nima Bidari</title>
+
+
+
 </head>
 
-<body>
 
+
+<body>
 
 <ul class = "topBar">
     <li><a href="../index.html">Home</a></li>
@@ -24,37 +28,29 @@
       <li><a class = "dropBtn">Games</a></li>
 
       <div class = "dropDown-content">
-        <a onclick = alreadyOnPage()>Enigma Encoder</a>
+        <a href="../enigmaEncoder/enigma.html">Enigma Encoder</a>
       </div>
       <div class = "dropDown-content" id = "snakeGameDropdown">
         <a href="../snakeGame/snake.html">Snake</a>
       </div>
       <div class = "dropDown-content" id = "pongGameDropdown">
-        <a href="../pongGame/pong.html">Pong</a>
+        <a onclick=alreadyOnPage()>Pong</a>
       </div>
 
     </div>
 
 </ul>
 
-<div class="game-container">
-  <div class = "flex-container">
-    <div id = "typeWriter">
-      <!-- TYPEWRITER -->
-
-    </div>
-
-    <div id = "plugBoard">
-      <!-- PLUGBOARD -->
-      
-    </div>
-  </div>
+<div class = "pongContainer">
+  <div id = "score">0 : 0</div>
+  <canvas id = "gameCanvas" width = "1000" height = "700"></canvas>
 </div>
 
-<script src = "enigma.js">
-  </script>
 <script src = "../script.js">
+	</script>
+<script src = "pong.js">
   </script>
 
 </body>
+
 </html>

@@ -117,18 +117,16 @@ shiftFnc = function(rotor, rVal) {
 }
 
 encryptFnc = function(inputChar, rotor) {
-	var outputChar = ''
 	var indexChar = ''
 
-	for (var j = 0; j < 25; j++) {
+	for (var j = 0; j < 26; j++) {
 		if (alphabet[j] == inputChar) {
 			indexChar = j
 		}
 	}
 
-	outputChar = enigmaAlpha[rotor-1][indexChar]
 
-	return outputChar
+	return enigmaAlpha[rotor-1][indexChar]
 }
 
 plugBoardFnc = function(inputChar, plugList) {
