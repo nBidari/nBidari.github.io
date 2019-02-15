@@ -161,6 +161,17 @@ enigmaEncode = function(inputStr, r1, r2, r3, r1v, r2v, r3v, plugList) {
 
 		outputChar = encryptFnc(outputChar,3)
 		shiftFnc(3,1)
+		
+		///
+
+		outputChar = encryptFnc(outputChar,1)
+		shiftFnc(1,1)
+
+		outputChar = encryptFnc(outputChar,2)
+		shiftFnc(2,1)
+
+		outputChar = encryptFnc(outputChar,3)
+		shiftFnc(3,1)
 
 		plugBoardFnc(outputChar, plugList)
 
