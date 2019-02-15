@@ -32,6 +32,7 @@ let paddles = [
 let bx = 10
 let by = 10
 
+
 /*
 The functions I'm going to need:
 
@@ -56,7 +57,8 @@ Maybe some stuff later with different game scenes.
 main()
 
 
-document.addEventListener("keydown", movePaddles)
+document.addEventListener("keydown", movePlayerOne)
+document.addEventListener("keydown", movePlayerTwo)
 
 function main() {
 
@@ -82,7 +84,7 @@ function drawPaddles(playerOne,PlayerTwo) {
 	ctx.strokeRect(paddles[1].x, paddles[1].y, 20, 100)
 }
 
-function movePaddles(event) {
+function movePlayerOne(event) {
 	const UP_KEY = 38
 	const DOWN_KEY = 40
 	const W_KEY = 87
@@ -96,13 +98,22 @@ function movePaddles(event) {
 	if (keyPressed === DOWN_KEY) {
 		paddles[1].y += 5
 	}
-	if (keyPressed === W_KEY) {
+}
+
+function movePlayerTwo(event) {
+	const W_KEY = 87
+	const S_KEY = 83
+
+	const keyPressed = event.keyCode
+
+	if (keyPressed == W_KEY) {
 		paddles[0].y -= 5
 	}
-	if (keyPressed === S_KEY) {
+	if (keyPressed == S_KEY) {
 		paddles[0].y += 5
 	}
 
+	
 }
 
 
