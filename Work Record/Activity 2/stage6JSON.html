@@ -3,7 +3,7 @@
 <head>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<title>JSON Stage 5</title>
+	<title>JSON Stage 6</title>
 
 	
     <style>
@@ -98,7 +98,7 @@
 <script>
    
     var myData = "";
-    var staticUrl = 'https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/Activity%202/data/data.json'; 
+    var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json'; 
 
     $.getJSON(staticUrl, function(data) {
         
@@ -121,8 +121,6 @@
             
         
         }
-        
-        console.log(largest)
 
         for (i = 2; i < 194; i++) {
 
@@ -138,9 +136,7 @@
             
                 val1 = parseInt(cval/largest*iw);
 
-                document.getElementById("content").appendChild(div);
-                console.log(document.getElementById("div"+i))
-                
+                document.getElementById("content").appendChild(div);                
             
 
                 document.getElementById("div"+i).style.width = val1+"px";
@@ -150,7 +146,6 @@
                 p.setAttribute("id","p"+i);
                 tcountry = String(data.fact[i].dims.COUNTRY);
 
-                console.log(tcountry);
 
                 document.getElementById("div"+i).appendChild(p);
                 document.getElementById("p"+i).innerHTML = "<pre>"+tcountry+" - "+cval+"</pre>";    
