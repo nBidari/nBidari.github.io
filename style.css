@@ -1,6 +1,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
+
 	background-color: #4f4f4f;
 }
 
@@ -139,10 +140,10 @@ li:active{
 
 /*PARALLAX EFFECT*/
 .parallaxBackground {
-	/* Set a specific height */
+	/* Specific Height */
 	min-height: 700px; 
 
-  /* Create the parallax scrolling effect */
+  /* Scrolling effect */
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -160,7 +161,7 @@ li:active{
 .flip-box {
 	background-color: transparent;
 	width: 300px;
-	height: 600px;
+	height: 500px;
 	perspective: 1000px;
 }
 
@@ -168,7 +169,7 @@ li:active{
 .flip-box-inner {
 	position: relative;
 	width: 300px;
-	height: 600px;
+	height: 500px;
 	text-align: center;
 	transition: transform 0.5s;
 	transform-style: preserve-3d;
@@ -211,12 +212,12 @@ li:active{
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
-	margin-top: 500px;
+	margin-top: 800px;
 
 	margin-left: 25%;
 	margin-right: 25%;
 
-	height: 600px;
+	height: 650px;
 }
 
 .flex-container > div {
@@ -226,10 +227,39 @@ li:active{
 }
 
 
-/*Home Page Buttons*/
+/*Home Page*/
 
-#aboutMe {
+#aboutMe-front {
+	padding: 16px;
+	text-align: center;
+}
+
+#aboutMe-back {
+	margin-top: 40px;
+
+	padding: 20px;
+	text-align: center;
+}
+
+/*Home Page Buttons*/
+.homeBtn {
+	text-decoration: none;
+	color: #ffffff;
+
+	width: auto;
+	height: auto;
+	margin-top: 10px;
+
 	padding: 20px;
 
-	text-align: left;
+	border-radius: 30px;
+}
+
+.homeBtn:hover {
+	background-color: #36383a;
+
+}
+
+.homeBtn:active {
+	transform: scale(0.95);
 }
