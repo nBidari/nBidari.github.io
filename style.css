@@ -1,8 +1,9 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	background-color: #e1e4e4;
+	background-color: #161616;
 }
+
 
 
 /*TOPBAR*/
@@ -11,7 +12,7 @@ html, body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background-color: #0D164C;
+	background-color: #161616;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -19,7 +20,7 @@ html, body {
 
 .topBar a {
 	float: left;
-	color: #2CEEFF;
+	color: #ffffff;
 	text-align: left;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -28,6 +29,12 @@ html, body {
 li {
 	float: left;
 	cursor: pointer;
+
+	border-radius: 15px;
+
+	animation: topbarslide 0.5s;
+
+
 }
 
 li a {
@@ -41,14 +48,15 @@ li a {
 	letter-spacing: 1px;
 
 	font-family: "Staatliches";
+
 }
 
 li:hover:not(.topBaractive) {
-	background-color: #080E30;
+	background-color: #36383a;
 }
 
 li:focus {
-	outline: 1px solid #080E30;
+	outline: 1px solid #36383a;
     outline-offset: -4px;
 }
 
@@ -56,10 +64,20 @@ li:active{
 	transform: scale(0.95);
 }
 
-/*DROPDOWN MENU*/
+@keyframes topbarslide {
+	from {margin-left: 100px;
+		  transform: scale(0.1);}
+	to {margin-left: 0px;
+		transform: scale(1);}
+}
+
+
+/*DROPDOWN MENU
 .dropDown {
 	float: left;
 	overflow: hidden;
+
+	border-radius: 15px;
 }
 
 .dropDown .dropBtn { 
@@ -72,7 +90,7 @@ li:active{
 }
 
 .topBar a:hover, dropDown:hover .dropBtn {
-	background-color: #080E30;
+	background-color: #4f5154;
 	cursor: pointer;
 }
 
@@ -89,7 +107,9 @@ li:active{
 
 	font-family: "Staatliches";
 }
-/**********************/
+
+
+
 #snakeGameDropdown {
 	top: 100px;
 }
@@ -114,6 +134,8 @@ li:active{
 	cursor: pointer;
 }
 
+*/
+
 
 /*PARALLAX EFFECT*/
 .parallaxBackground {
@@ -131,4 +153,60 @@ li:active{
 .border {
 	border-radius: 25px;
 	border: 3px solid #232423;
+}
+
+/*Flip Boxes*/
+
+.flip-box {
+	background-color: transparent;
+	width: 300px;
+	height: 300px;
+	perspective: 1000px;
+}
+
+.flip-box-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+
+	box-shadow: 0px 4px 100px rgba(0,0,0,0.25);
+}
+
+.flip-box:hover .flip-box-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-box-front {
+	background-color: #bbb;
+	color: black;
+}
+
+.flip-box-back {
+	transform: rotateY(180deg);
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: DodgerBlue;
+	align-content: center;
+	justify-content: center;
+	margin-top: 190px;
+}
+
+.flex-container > div {
+	background-color: #f1f1f1;
+	margin: 5px;
+	padding: 15px;
+	font-size: 22px;
 }
