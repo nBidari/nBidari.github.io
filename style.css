@@ -2,10 +2,15 @@ html, body {
 	margin: 0;
 	padding: 0;
 
-	background-color: #4f4f4f;
+	background-color: #bcbcbc;
+
+	animation: fadein 1s;
 }
 
-
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
 
 /*TOPBAR*/
 
@@ -13,14 +18,15 @@ html, body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background-color: #4f4f4f;
 	position: fixed;
 	top: 0;
 	width: 100%;
+
 }
 
 .topBar a {
 	float: left;
+
 	color: #ffffff;
 	text-align: left;
 	padding: 14px 16px;
@@ -42,7 +48,7 @@ li a {
 	display: block;
 	color: #4f4f4f;
 	text-align: left;
-	padding: 14px 16px;
+	padding: 14px 20px;
 	text-decoration: none;
 
 	font-size: 23px;
@@ -52,13 +58,17 @@ li a {
 
 }
 
-li:hover:not(.topBaractive) {
-	background-color: #36383a;
+li:hover a{
+	color: #3a3a3a;
+
+	box-shadow: 0 0 5px #888888;
+
 }
 
-li:focus {
-	outline: 1px solid #36383a;
-    outline-offset: -4px;
+#login-button a:hover{
+	color: #00a028;
+
+	box-shadow: 0 0 5px #004f13;
 }
 
 li:active{
@@ -163,6 +173,7 @@ li:active{
 	width: 300px;
 	height: 500px;
 	perspective: 1000px;
+	border-radius: 15px;
 }
 
 
@@ -187,6 +198,8 @@ li:active{
 	height: 100%;
 	backface-visibility: hidden;
 
+	border-radius: 15px;
+
 	text-align: center;
 	text-decoration: none;
 
@@ -198,12 +211,12 @@ li:active{
 
 
 .flip-box-front {
-	background-color: #a8a8a8;
+	background-color: #969696;
 	color: #383838;
 }
 
 .flip-box-back {
-	background-color: #a8a8a8;
+	background-color: #969696;
 	transform: rotateY(180deg);
 }
 
@@ -212,7 +225,7 @@ li:active{
 	flex-wrap: wrap;
 	align-content: center;
 	justify-content: center;
-	margin-top: 800px;
+	margin-top: 400px;
 
 	margin-left: 25%;
 	margin-right: 25%;
@@ -221,45 +234,7 @@ li:active{
 }
 
 .flex-container > div {
-	background-color: #f1f1f1;
+	background-color: #777777;
 	margin: 5px;
 	padding: 14px;
-}
-
-
-/*Home Page*/
-
-#aboutMe-front {
-	padding: 16px;
-	text-align: center;
-}
-
-#aboutMe-back {
-	margin-top: 40px;
-
-	padding: 20px;
-	text-align: center;
-}
-
-/*Home Page Buttons*/
-.homeBtn {
-	text-decoration: none;
-	color: #ffffff;
-
-	width: auto;
-	height: auto;
-	margin-top: 10px;
-
-	padding: 20px;
-
-	border-radius: 30px;
-}
-
-.homeBtn:hover {
-	background-color: #36383a;
-
-}
-
-.homeBtn:active {
-	transform: scale(0.95);
 }
