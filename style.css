@@ -231,10 +231,34 @@ li:active{
 	margin-right: 25%;
 
 	height: 650px;
+
 }
 
 .flex-container > div {
 	background-color: #777777;
+	
 	margin: 5px;
 	padding: 14px;
+}
+
+
+/*-------FOOTER-----------*/
+.footer {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	background-color: #a5a4a4;
+	box-shadow: box-shadow: 0px 4px 100px rgba(0,0,0,0.25);
+
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-family: "Staatliches";
+	text-align: center;
+
+	opacity: 0.8;
+}
+
+.footer:hover {
+	opacity: 1;
 }

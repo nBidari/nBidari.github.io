@@ -37,7 +37,7 @@
 
 /*BANNER*/
 #coming-soon-container {
-	display: absolute;
+	display: block;
 	width: 100%;
 }
 #coming-soon {
