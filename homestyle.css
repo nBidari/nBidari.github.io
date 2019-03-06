@@ -19,7 +19,7 @@
 
 	width: auto;
 	height: auto;
-	margin-top: 10px;
+	margin-top: 50px;
 
 	padding: 20px;
 
@@ -35,30 +35,11 @@
 	transform: scale(0.95);
 }
 
-/*BANNER*/
+
+
+/*---COMING SOON BANNER----*/
+
 #coming-soon-container {
 	display: block;
 	width: 100%;
 }
-#coming-soon {
-	font-family: 'Anton', sans-serif;
-	font-size: 112px;
-
-	color: #2d2d2d;
-	background-color: rgba(244, 244, 244, 0.5);
-
-	border-radius: 15px;
-	border: 5px solid #bfbfbf;
-}
-
-.centered {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-
-
-
-
