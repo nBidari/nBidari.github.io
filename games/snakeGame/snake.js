@@ -41,6 +41,10 @@ ctx.strokeStyle = CANVAS_BORDER_COLOUR
 ctx.fillRect(0,0,gameCanvas.width, gameCanvas.height)
 ctx.strokeRect(0,0,gameCanvas.width, gameCanvas.height)
 
+
+
+
+
 //INITIALIZING GAME
 main()
 createFood()
@@ -55,7 +59,7 @@ document.addEventListener("keydown", changeDirection)
 //Just runs all of the functions on each tick
 function main() {
 
-	if (didGameEnd()) return //checks if game ended
+	if (didGameEnd()) restartGame() //checks if game ended
 
 
 	setTimeout(function onTick() {
@@ -90,13 +94,39 @@ function didGameEnd() {
 	}
 
 	//These are just if consts, not necessary but look nice I guess?
-
+	/*
 	const hitLeftWall = snake[0].x < 0
 	const hitRightWall = snake[0].x > gameCanvas.width - 20
 	const hitTopWall = snake[0].y < 0
 	const hitBottomwall = snake[0].y > gameCanvas.height - 20
 
 	return hitLeftWall || hitRightWall || hitTopWall || hitBottomwall
+	*/
+}
+
+/*
+This is a restart game function
+
+I want to use this so that everytime the didGameEnd function
+returns true, it just resets.
+*/
+function restartGame() {
+	score = 0
+	drawFood()
+
+	dx = 20
+	dy = 0
+
+	snake = [
+		{x: 160, y: 160},
+		{x: 140, y: 160},
+		{x: 120, y: 160},
+		{x: 100, y: 160},
+		{x: 80, y: 160},
+
+	]
+	document.getElementById('score').innerHTML = "Score: " + score
+
 }
 
 //This function draws the food on the canvas, nothing special.
@@ -114,29 +144,25 @@ perspective values. The unshift function adds something
 to the start of the array and the pop function removes
 the last item.
 */
-function advanceSnake() {
-	const head = {x: snake[0].x + dx, y: snake[0].y + dy}
-	snake.unshift(head)
+function didGameEnd() {
 
-	//Now we check if the snake ate the food after it has moves
-	const didEatFood = snake[0].x === foodX && snake[0].y === foodY
-	if (didEatFood) {
-		score += 100
-		document.getElementById('score').innerHTML = "Score: " + score //displays score
+	//Checks for each block to see if it collided
+	for (let i = 4; i < snake.length; i++) {
+		//starts at 4 because we already have 4 blocks
 
-		createFood() //Create new food after this one is eaten
-	} else {
-		snake.pop()
-
-		/*
-		This is an efficient way to increase the size of the snake
-		Normally each time it moves, it will add one at the front,
-		and remove one from the back. This is nice because it adds
-		one at the front, and if it eats something, it doesn't
-		remove anything. This way it has just gained a net total
-		of +1 snakePart
-		*/
+		//Just checks if any of the x,y pairs are equal
+		const didCollide = snake[i].x === snake[0].x && snake[i].y == snake[0].y
+		if (didCollide) return true
 	}
+
+	//These are just if consts, not necessary but look nice I guess?
+
+	const hitLeftWall = snake[0].x < 0
+	const hitRightWall = snake[0].x > gameCanvas.width - 20
+	const hitTopWall = snake[0].y < 0
+	const hitBottomwall = snake[0].y > gameCanvas.height - 20
+
+	return hitLeftWall || hitRightWall || hitTopWall || hitBottomwall
 }
 
 /*
@@ -191,6 +217,9 @@ function drawSnakePart(snakePart) {
 
 	ctx.fillRect(snakePart.x, snakePart.y, 20, 20)
 	ctx.strokeRect(snakePart.x, snakePart.y, 20, 20)
+
+	console.log(snakePart.x)
+	console.log(snakePart.y)
 }
 
 function changeDirection(event) {
@@ -231,4 +260,29 @@ solution: if statements that dont let it do up
 if its going down, vice versa as well as the same
 for right and left.
 */
+
+function advanceSnake() {
+	const head = {x: snake[0].x + dx, y: snake[0].y + dy}
+	snake.unshift(head)
+
+	//Now we check if the snake ate the food after it has moves
+	const didEatFood = snake[0].x === foodX && snake[0].y === foodY
+	if (didEatFood) {
+		score += 100
+		document.getElementById('score').innerHTML = "Score: " + score //displays score
+
+		createFood() //Create new food after this one is eaten
+	}else {
+		snake.pop()
+
+		/*
+		This is an efficient way to increase the size of the snake
+		Normally each time it moves, it will add one at the front,
+		and remove one from the back. This is nice because it adds
+		one at the front, and if it eats something, it doesn't
+		remove anything. This way it has just gained a net total
+		of +1 snakePart
+		*/
+	}
+}
 
