@@ -52,7 +52,7 @@ html, body {
 	border-radius: 15px;
 	border: 5px solid #bfbfbf;
 
-	animation: fadeInLeft 1s;
+	animation: fadeInLeft 1.5s;
 }
 
 @keyframes fadeInLeft {

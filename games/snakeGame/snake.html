@@ -1,54 +1,47 @@
+<div class = "snakeContainer">
+  <div id = "score">SCORE: 0</div>
+  <canvas id = "gameCanvas" width = "600" height = "600"></canvas>
+</div>
 <!doctype html>
 <html lang = "en">
 
 <head>
   <!-- Own CSS -->
-  <link rel="stylesheet" href="..../style.css">
+  <link rel="stylesheet" href="../../style.css">
   <link rel="stylesheet" href="snake.css">
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 
-  <title>Nima Bidari</title>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
 
-
+  <title>nBidari.io</title>
 
 </head>
 
 
 
 <body>
-
+  
 <ul class = "topBar">
-    <li><a href="../index.html">Home</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li><a href="../Work Record/WRindex.html">Work Record</a></li>
-
-    <div class = "dropDown">
-      <li><a class = "dropBtn">Games</a></li>
-
-      <div class = "dropDown-content">
-        <a href="../enigmaEncoder/enigma.html">Enigma Encoder</a>
-      </div>
-      <div class = "dropDown-content" id = "snakeGameDropdown">
-        <a onclick = alreadyOnPage()>Snake</a>
-      </div>
-      <div class = "dropDown-content" id = "pongGameDropdown">
-        <a href="../pongGame/pong.html">Pong</a>
-      </div>
-
-    </div>
-
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="../../Work Record/WRindex.html">Work Record</a></li>
+    <li><a href="../gameIndex.html">Games</a></li>
+    <li id="login-button" style="float:right;"><a href="../../signup.html">Sign Up</a></li>
+    <li style="float:right;"><a href="#index">Nima</a></li>
 </ul>
 
-<div class = "snakeContainer">
-  <div id = "score">SCORE: 0</div>
-  <canvas id = "gameCanvas" width = "600" height = "600"></canvas>
+
+<div class="footer"> 
+  n Bidari<br>
+  Computer Science Enthusiast<br>
 </div>
 
 
-<script src = "../script.js">
-	</script>
+<script src = "../../script.js">
+  </script>
 <script src = "snake.js">
   </script>
 
