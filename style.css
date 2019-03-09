@@ -45,6 +45,8 @@ html, body {
 .banner-text {
 	font-family: 'Anton', sans-serif;
 	font-size: 112px;
+	text-align: center;
+	letter-spacing: 2px;
 
 	color: #2d2d2d;
 	background-color: rgba(244, 244, 244, 0.5);

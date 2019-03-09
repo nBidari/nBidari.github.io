@@ -30,17 +30,17 @@
     <li style="float:right;"><a href="#index">Nima</a></li>
 </ul>
 <div class="banner">
-  <img src="../images/gaming-background.jpg" style="zoom: 150%; position: relative; top: -100px;">
+  <img id="banner" src="../images/gaming-background.jpg" style="zoom: 150%; position: relative; top: -100px;">
   <div class="centered banner-text">GAMES</div>
 </div>
 
-<div class="flex-container" style="margin-left: 5%; margin-right: 5%; margin-top: 0px;">
+<div class="flex-container" style="margin-left: 5%; margin-right: 5%; margin-top: 20px; height: auto;">
   <div class="game-container">
-    <img src="images/dvdLogo.png"> <br><br><br>
+    <a href="dvdLogoBounce/dvdLogoBounce.html"><img src="images/dvdLogo.png"></a> <br><br><br>
     <a href="dvdLogoBounce/dvdLogoBounce.html" class="gameSubmit">Bouncing DVD Logo</a>
   </div>
   <div class="game-container">
-    <img src="images/snakeLogo.png"><br><br>
+    <a href="snakeGame/snake.html"><img src="images/snakeLogo.png"></a><br><br>
     <a href="snakeGame/snake.html" class="gameSubmit">Snake</a>
   </div>
 </div>
@@ -54,6 +54,31 @@
 
 <script src = "../script.js">
 	</script>
+<script>
+	w = window.innerWidth
+
+	alreadyOnPage = function() {
+		alert("Already on this page!")
+	}
+
+	if (w > 1040) {
+		document.getElementById("banner").style.zoom = "200%"
+	} else {
+		document.getElementById("banner").style.zoom = "100%"
+	}
+
+	window.onresize = function(event) {
+
+	w = window.innerWidth
+
+	if (w > 1040) {
+		document.getElementById("banner").style.zoom = "200%"
+	} else {
+		document.getElementById("banner").style.zoom = "100%"
+	}
+
+	}
+</script>
 
 </body>
 
