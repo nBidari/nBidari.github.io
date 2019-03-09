@@ -217,9 +217,6 @@ function drawSnakePart(snakePart) {
 
 	ctx.fillRect(snakePart.x, snakePart.y, 20, 20)
 	ctx.strokeRect(snakePart.x, snakePart.y, 20, 20)
-
-	console.log(snakePart.x)
-	console.log(snakePart.y)
 }
 
 function changeDirection(event) {
