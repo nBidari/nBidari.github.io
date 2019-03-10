@@ -69,7 +69,7 @@ function main() {
 		drawSnake()
 
 		main()
-	}, 50)
+	}, 60)
 }
 
 
