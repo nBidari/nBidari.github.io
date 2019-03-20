@@ -50,3 +50,9 @@ function googleLogin() {
 		})
 		.catch(console.log)
 }
+
+function loadTest() {
+	var x = document.getElementById("login").elements.length;
+	console.log(x)
+	console.log('test')
+}

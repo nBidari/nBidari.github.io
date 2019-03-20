@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <!-- Own CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="homestyle.css">
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+
+  <title>nBidari.io</title>
+
+</head>
+
+
+
+<body>
+  
+<ul class = "topBar">
+    <li><a onclick = alreadyOnPage()>Home</a></li>
+    <li><a href="Work Record/WRindex.html">Work Record</a></li>
+    <li><a href="games/gameIndex.html">Games</a></li>
+    <li id="login-button" style="float:right;"><a onclick=googleLogin()>Sign Up With Google</a></li>
+    <li style="float:right;"><a id="userName">Nima</a></li>
+</ul>
+
+
+<div id = "coming-soon-container">
+  <img id="coming-soon-image" src="images/coding-logo.jpg" style="box-shadow: 0px 4px 100px rgba(0,0,0,0.25);">
+  <div class="centered banner-text">COMING SOON</div>
+</div>
+
+<div class = "flex-container">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <div id="aboutMe-front">
+          <h1 style="float: center;">About Me</h1>
+            <img src="images/githubicon.png" style="zoom:0.05">
+            <img src="images/arduinoicon.png" style="zoom:0.13">
+            <img src="images/aiicon.png" style="zoom:0.45">
+        </div>
+      </div>
+      <div class="flip-box-back">
+        <div id="aboutMe-back">
+          <img src="images/githubicon.png" style="zoom:0.05">
+          <br><br>
+          <a href="https://github.com/nBidari" class="homeBtn">Github</a>
+          <br><br><br><br>
+          <a href="contact.html" class="homeBtn" style="font-size: 40px">More Info</a>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <h1 style="float: center;">Projects<br>&<br>Games</h1>
+      </div>
+      <div class="flip-box-back">
+        <br><br>
+        <a href="projects-Portfolio/projectIndex.html" class="homeBtn" style="font-size: 40px;">Projects</a>
+        <br>
+        <img src="images/retro-Pie.png" style="zoom:0.08">
+        <br><br>
+        <a href="games/gameIndex.html" class="homeBtn" style="font-size: 40px;">Games</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer"> 
+  n Bidari<br>
+</div>
+
+
+<script src = "script.js">
+	</script>
+
+</body>
+
+</html>
