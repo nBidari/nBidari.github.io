@@ -1,7 +1,7 @@
 //VARIABLES YAY
 var player, ball, ai; //OOP
 
-var playerScore = 9;
+var playerScore = 0;
 var aiScore = 0;
 
 var dots = [];
