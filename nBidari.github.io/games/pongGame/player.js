@@ -11,7 +11,7 @@ function Player() { //OBJECT ORIENTED PROGRAMMING YAAAAY!
 
 	this.show = function() {
 		noStroke();
-		fill(255);
+		fill(249, 58, 24);
 		rect(this.pos.x, this.pos.y, this.width, this.height);
 	}
 

@@ -8,35 +8,77 @@ function AI() {
 	this.spd = 10;
 	this.maxSpd = 15;
 
+	this.difficulty = 0;
+	this.hitBallChance = 60;
+	this.hitBall = true; //always hit first serve
+
 	this.show = function() {
 		noStroke();
-		fill(255);
+		fill(8, 0, 255);
 		rect(this.pos.x, this.pos.y, this.width, this.height);
 	}
 
+	this.hitBallRng = function() {
+		let randomNum = random(0, 100);
+		let ballNum = this.hitBallChance - this.difficulty;
+
+		if (randomNum <= ballNum) {
+			this.hitBall = true;
+		}else {
+			this.hitBall = false;
+		}
+
+		console.log(this.difficulty);
+	}
+
 	this.update = function() {
-		//dist is the distance formula between two points.
+		let fakeBallPos = ball.pos.y - 95 - random(5,20); // misses ball by random amount of pixels;
 
-		let d1 = dist(ball.pos.x, ball.pos.y, this.pos.x, this.pos.y);
-		let d2 = dist(ball.pos.x, ball.pos.y, this.pos.x, this.pos.y + this.height);
+		if (this.hitBall) {
 
-		let d = (d1+d2)/2;
+			this.spd = constrain(this.spd, -this.maxSpd, this.maxSpd);
 
-		this.pos.add(this.acc);
-		this.pos.y = constrain(this.pos.y, 0, height-this.height);
-
-		if(d < 450) { //Ball is in 450 pixel range
-			if(ball.pos.y < this.pos.y - this.height/2) { //ball is above it.
+			if (ball.pos.y >= this.pos.y && ball.pos.y <= this.pos.y + this.height) {
+				this.pos.y = this.pos.y;
+			}else if(ball.pos.y < this.pos.y) { //ball is above it.
 				this.acc.y -= this.spd;
 			}else {
 				this.acc.y += this.spd;
 			}
 
 			this.acc.y = constrain(this.acc.y, -this.maxSpd, this.maxSpd);
+
+			this.pos.y = constrain(this.pos.y, 0, height-this.height);
+			this.pos.add(this.acc);
+			//this.pos.y = ball.pos.y - this.height/2;
 		}else {
-			this.acc.y += random(-this.spd*0.9, this.spd);
+			this.spd = constrain(this.spd, -this.maxSpd, this.maxSpd);
+
+			if (fakeBallPos >= this.pos.y && fakeBallPos <= this.pos.y + this.height) {
+				this.pos.y = this.pos.y;
+			}else if(fakeBallPos < this.pos.y + 20) { //ball is above it.
+				this.acc.y -= this.spd;
+			}else if (fakeBallPos > this.pos.y - 20) {
+				this.acc.y += this.spd;
+			}
+
+			this.acc.y = constrain(this.acc.y, -this.maxSpd, this.maxSpd);
+
+			this.pos.y = constrain(this.pos.y, 0, height-this.height);
+			this.pos.add(this.acc);
 		}
 
+		//THIS IS AN ALGORITHM THAT I FOUND ONLINE
+		/*if(ball.pos.y < this.pos.y - this.height/2) { //ball is above it.
+			this.acc.y -= this.spd;
+		}else {
+			this.acc.y += this.spd;
+		}
+
+		this.acc.y = constrain(this.acc.y, -this.maxSpd, this.maxSpd);
+
+		this.pos.add(this.acc);
+		this.pos.y = constrain(this.pos.y, 0, height-this.height);*/
 	}
 
 }
