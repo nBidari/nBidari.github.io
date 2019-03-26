@@ -34,6 +34,8 @@ function AI() {
 	this.update = function() {
 		let fakeBallPos = ball.pos.y - 95 - random(5,20); // misses ball by random amount of pixels;
 
+		//this.pos.y = ball.pos.y - this.height/2; idek.
+		
 		if (this.hitBall) {
 
 			this.spd = constrain(this.spd, -this.maxSpd, this.maxSpd);

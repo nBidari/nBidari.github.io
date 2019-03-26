@@ -51,7 +51,7 @@ function draw() {
  		ball.collide();
 		player.update();
 	 	ball.scores();
-
+	 	
 	 	if (ball.acc.x > 0 && ball.pos.x >= 700) {
 		 		ai.update();
 		}
