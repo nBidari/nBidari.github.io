@@ -11,12 +11,26 @@ html, body {
 	padding: 0;
 
 	animation: fadeIn 1.5s;
+	font-family: 'Prociono', serif;
 }
 
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*-----Animation-----*/
 @keyframes fadeIn {
-	from {opacity: 0;}
+	from {opacity: 0.4;}
 	to {opacity: 1;}
 }
+@keyframes fadeOut {
+	from {opacity: 1;}
+	to {opacity: 0.4;}
+}
+/*--------------------*/
+
+
+/*--------Sidebar---------*/
 
 .sidebar {
 	position: fixed;
@@ -38,6 +52,7 @@ html, body {
 	text-align: center;
 }
 
+
 .sidebar li a {
 	display: block;
 
@@ -46,21 +61,52 @@ html, body {
 
 	text-decoration: none;
 
-	color: #ffffff;
+	color: #000000;
 	font-size: 30px;
 	font-family: 'Unica One', cursive;
 	font-weight: 50px;
 }
 
 .sidebar li a:hover {
-	background-color: #a8a8a8;
+	opacity: 1;
 }
 
 .sidebar li a:active {
-	transform: scale(0.95);
+	font-size: 25px;
 }
 
-/*Footer*/
+/*Extra's*/
+#side-goal3 {
+	background-color: #56C164;
+}
+#side-goal3:hover {
+	background-color: #00af0e;
+}
+
+
+#side-goal7 {
+	background-color: #E8C14C;
+}
+#side-goal7:hover {
+	background-color: #E8AB00;
+}
+
+#side-link {
+	background-color: #FF606A;
+}
+#side-link:hover {
+	background-color: #FF0000;
+}
+
+#side-sources {
+	background-color: #4C56E8;
+}
+#side-sources:hover {
+	background-color: #0B19E8;
+}
+/*----------------------*/
+
+/*--------Footer--------*/
 .footer {
    position: fixed;
    left: 0;
@@ -78,3 +124,6 @@ html, body {
 .footer:hover {
 	opacity: 1;
 }
+/*----------------------*/
+/*----------------------*/
+/*----------------------*/
