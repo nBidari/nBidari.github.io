@@ -1,8 +1,11 @@
 /* Reference
+font-family: 'Bubbler One', sans-serif;
 font-family: 'Prociono', serif;
 font-family: 'Sirin Stencil', cursive;
 font-family: 'Unica One', cursive;
 */
+
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One|Prociono|Sirin+Stencil|Unica+One');
 
 html, body {
 	background-color: #91D5FF;
@@ -125,5 +128,18 @@ html, body {
 	opacity: 1;
 }
 /*----------------------*/
+/*INTRO*/
+#intro {
+	font-family: 'Prociono', serif;
+}
+
 /*----------------------*/
 /*----------------------*/
+
+
+
+
+
+
+
+

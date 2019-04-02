@@ -27,7 +27,3 @@
 // 		sidebar.style.opacity = "0.2";
 // 	}
 // }
-
-function alreadyOnPage() {
-	alert("Already on Page!")
-}

@@ -4,18 +4,18 @@
 	<!-- My Files -->
 	<link rel="stylesheet" href="style.css">
 	<script src="script.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="AirQualityApi.js"></script>
 
-	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Prociono|Sirin+Stencil|Unica+One" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 
 	<title>Goal 3!</title>
 
 	<script> 
 		$(function(){
-		  $("#header").load("headerAndFooter/header.html"); 
-		  $("#footer").load("headerAndFooter/footer.html"); 
+		  $("#header").load("jqueryImports/header.html"); 
+		  $("#activityBar").load("jqueryImports/activityBar.html"); 
 		});
 	</script> 
 </head>
@@ -25,18 +25,17 @@
 <div id="header"></div>
 
 <!--Introduction-->
-<div></div>
+<div id="intro">
+	<p>laoreet id donec ultrices tincidunt arcu non sodales neque sodales ut etiam sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis urna id volutpat lacus</p>
+</div>
 
 <!--Interactivities-->
 <div>
 	<!--Activity Bar-->
-	<div></div>
+	<div id="activityBar"></div>
 
 	<!--Interactivities-->
-	<div>
-		<!--Arrows-->
-		<div></div>
-	</div>
+	<div id="airQualityApi"></div>
 </div>
 
 <!--Flip Box Quiz-->
