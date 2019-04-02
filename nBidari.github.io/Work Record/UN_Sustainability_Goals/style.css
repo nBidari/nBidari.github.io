@@ -5,7 +5,7 @@ font-family: 'Unica One', cursive;
 */
 
 html, body {
-	background-color: #c9c9c9;
+	background-color: #91D5FF;
 
 	margin: 0;
 	padding: 0;
@@ -114,7 +114,7 @@ html, body {
    width: 100%;
 
    opacity: 0.6;
-   background-image: linear-gradient(#c9c9c9,#828080);
+   background-color: #828080;
 
    font-family: 'Unica One', cursive;
    color: white;
