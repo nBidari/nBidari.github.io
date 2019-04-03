@@ -2,7 +2,7 @@ function Ball() {
 	this.pos = createVector(width/2, height/2);
 	this.radius = 10;
 
-	this.maxSpd = createVector(20, 15);
+	this.maxSpd = createVector(30, 35);
 
 	this.collision = false;
 	this.collObj = null;
@@ -68,7 +68,9 @@ function Ball() {
 
 			if (this.pos.x <= 300) {
 				ai.difficulty = abs(this.acc.y) * 2;
-				if (playerScore-aiScore >= 5) {
+				if (this.acc.y <= 35) {
+					ai.hitBallChance = True;
+				}else if (playerScore-aiScore >= 5) {
 					ai.hitBallChance = 80;
 				}else {
 					ai.hitBallChance = 60;
