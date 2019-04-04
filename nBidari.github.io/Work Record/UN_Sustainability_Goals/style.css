@@ -89,6 +89,27 @@ html, body {
 	cursor: pointer;
 }
 
+/*Air Quality Widget*/
+.activity {
+	display: none;
+}
+#airQualityApi {
+	height: 200px;
+	width: 200px;
+
+	background-color: red;
+}
+/*Ambient Air Pollution Graph*/
+#ambientAirGraph {
+	height: 200px;
+	width: 200px;
+
+	background-color: green;
+}
+
+
+
+
 /*FLIP BOX QUIZ*/
 #flip-box-quiz {
 	/*background-color: brown;*/
@@ -172,7 +193,6 @@ html, body {
 #footer {
 	animation: bounce 1.3s infinite;
 }
-
 
 
 
