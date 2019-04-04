@@ -27,3 +27,14 @@
 // 		sidebar.style.opacity = "0.2";
 // 	}
 // }
+
+var footer;
+
+window.onload = function() {
+	footer = document.getElementById("footer")
+	footer.style.webkitAnimationPlayState = "running";
+};
+
+function turnOffAnimation() {
+	footer.style.webkitAnimationPlayState = "paused";
+}

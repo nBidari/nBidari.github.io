@@ -3,7 +3,9 @@
 <head>
 	<!-- My Files -->
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="animate.css">
+
+	
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 
@@ -21,29 +23,60 @@
 <!--Header-->
 <div id="header"></div>
 
-<!--Introduction-->
-<div></div>
-
-<!--Interactivities-->
-<div>
-	<!--Activity Bar-->
-	<div></div>
+<div id="content">
+	<!--Introduction-->
+	<div id="intro">
+		<center><p>laoreet id donec ultrices tincidunt arcu non sodales neque sodales ut etiam sit amet nisl purus in mollis nunc sed id semper risus in hendrerit gravida rutrum quisque non tellus orci ac auctor augue mauris augue neque gravida in fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus quam id leo in vitae turpis massa sed elementum tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse in est ante in nibh mauris cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo elit at imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis urna id volutpat lacus</p></center>
+	</div>
 
 	<!--Interactivities-->
-	<div>
-		<!--Arrows-->
-		<div></div>
+	<div id="interactivities">
+		<!--Activity Bar-->
+		<center><div id="activityBar">
+			<input type="button" class="activityBarButton" value="Air Quality in the World!">
+			<input type="button" class="activityBarButton" value="Ambient Air Pollution!">
+		</div></center>
+
+		<!--Interactivities-->
+		<div id="airQualityApi"></div>
+		<div id="ambientAirGraph"></div>
 	</div>
+
+	<!--Flip Box Quiz-->
+	<div id="flip-box-quiz">
+		<div class = "flex-container">
+		  <div class="flip-box">
+		    <div class="flip-box-inner">
+		      <div class="flip-box-front">
+		        <!-- STUFF ON THE FRONT-->
+		      </div>
+		      <div class="flip-box-back">
+		        <!-- STUFF ON THE BACK -->
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="flip-box">
+		    <div class="flip-box-inner">
+		      <div class="flip-box-front">
+		        <!-- STUFF ON THE FRONT-->
+		      </div>
+		      <div class="flip-box-back">
+		        <!-- STUFF ON THE BACK -->
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+	</div>
+
+	<!--Link to Sources-->
+	<div></div>
 </div>
-
-<!--Flip Box Quiz-->
-<div></div>
-
-<!--Link to Sources-->
-<div></div>
 
 <!--Footer-->
 <div id="footer"></div>
 
+<script src="script.js"></script>
 </body>
 </html>

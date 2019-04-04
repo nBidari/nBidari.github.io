@@ -14,31 +14,134 @@
 
 	<script> 
 		$(function(){
-		  $("#header").load("headerAndFooter/header.html"); 
-		  $("#footer").load("headerAndFooter/footer.html"); 
+		  $("#header").load("jqueryImports/header.html");
 		});
 	</script> 
+
+	<style>
+		/*ACTIVITY BAR*/
+		#sourceBar {
+			justify-content: center;
+			background-color: red;
+
+			width: auto;
+
+			border-radius: 10px;
+		}
+
+		.sourceBarButton {
+			font-family: 'Wendy One', sans-serif;
+			text-align: center;
+			text-decoration: none;
+			font-size: 25px;
+
+			background-color: black;
+			color: white;
+
+			border: none;
+			border-radius: 5px;
+
+			padding: 20px;
+			margin: 10px 10px;
+			height: 100px;
+
+			display: inline-block;
+			cursor: pointer;
+
+			opacity: 0.5;
+		}
+
+		.sourceBarButton:hover {
+			animation: rubberBand 0.6s;
+		}
+
+		.sourceBarButton:nth-child(1) {
+			opacity: 1;
+		}
+
+		.sources {
+			margin-top: 50px;
+		}
+
+		.sources:nth-child(1) {
+			display: block;
+		}
+	</style>
 </head>
 <body>
+<div id="content">
+	<!--Header-->
+	<div id="header"></div>
 
-<!--Header-->
-<div id="header"></div>
-
-<!--Sources-->
-<div>
-	<!--Source Bar-->
-	<div></div>
-
-	<!--Arrows-->
-	<div></div>
-
-	<!--Sources Pages-->
+	<!--Sources-->
 	<div>
+		<!--Source Bar-->
+		<center><div id="sourceBar">
+			<input style="background-color: #00af0e;" type="button" class="sourceBarButton" value="Goal 3 Sources!" onclick=goal3()>
+			<input style="background-color: #E8AB00;" type="button" class="sourceBarButton" value="Goal 7 Sources!" onclick=goal7()>
+			<input style="background-color: #FF0000;" type="button" class="sourceBarButton" value="Linking Them Sources!" onclick=link()>
+			<input style="background-color: #0B19E8;" type="button" class="sourceBarButton" value="Generally Great Sources!" onclick=other()>
+		</div></center>
+
+		<!--Sources Pages-->
+		<div>
+			<div class="sources">
+				<p>mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt</p>
+			</div>
+
+			<div class="sources">
+				<p>mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt</p>
+			</div>
+
+			<div class="sources">
+				<p>mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt</p>
+			</div>
+
+			<div class="sources">
+				<p>mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt</p>
+			</div>
+		</div>
 	</div>
 </div>
 
-<!--Footer-->
-<div id="footer"></div>
+<script>
+	var goal3Button = document.getElementsByClassName("sourceBarButton")[0]
+	var goal7Button = document.getElementsByClassName("sourceBarButton")[1]
+	var linkButton = document.getElementsByClassName("sourceBarButton")[2]
+	var otherButton = document.getElementsByClassName("sourceBarButton")[3]
+
+	function goal3() {
+		goal3Button.style.opacity="1";
+
+		goal7Button.style.opacity="0.5";
+		linkButton.style.opacity="0.5";
+		otherButton.style.opacity="0.5";
+	}
+
+	function goal7() {
+		goal7Button.style.opacity="1";
+
+		goal3Button.style.opacity="0.5";
+		linkButton.style.opacity="0.5";
+		otherButton.style.opacity="0.5";
+	}
+
+	function link() {
+		linkButton.style.opacity="1";
+
+		goal7Button.style.opacity="0.5";
+		goal3Button.style.opacity="0.5";
+		otherButton.style.opacity="0.5";
+	}
+
+	function other() {
+		otherButton.style.opacity="1";
+
+		goal7Button.style.opacity="0.5";
+		linkButton.style.opacity="0.5";
+		goal3Button.style.opacity="0.5";
+	}
+</script>
 
 
 </body>

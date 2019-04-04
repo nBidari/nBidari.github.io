@@ -25,17 +25,6 @@ html, body {
   .prev, .next,.text {font-size: 11px}
 }
 
-/*-----Animation-----*/
-@keyframes fadeIn {
-	from {opacity: 0.4;}
-	to {opacity: 1;}
-}
-@keyframes fadeOut {
-	from {opacity: 1;}
-	to {opacity: 0.4;}
-}
-/*--------------------*/
-
 #content {
 	margin-top: 65px;
 	margin-bottom: 60px;
@@ -46,7 +35,6 @@ html, body {
 #intro {
 	font-family: 'Prociono', serif;
 	width: 100%;
-	background-color: purple;
 }
 
 #intro p{
@@ -55,6 +43,9 @@ html, body {
 
 	border: 6px solid #213440;
 	border-radius: 10px;
+
+	background-color: #c1c1c1;
+	color: white;
 
 	font-size: 30px;
 	letter-spacing: 3px;
@@ -72,7 +63,7 @@ html, body {
 /*ACTIVITY BAR*/
 #activityBar {
 	justify-content: center;
-	background-color: red;
+	/*background-color: red;*/
 
 	width: auto;
 
@@ -100,7 +91,7 @@ html, body {
 
 /*FLIP BOX QUIZ*/
 #flip-box-quiz {
-	background-color: brown;
+	/*background-color: brown;*/
 }
 
 /*Flip Boxes*/
@@ -171,13 +162,16 @@ html, body {
 }
 
 .flex-container > div {
-	background-color: #777777;
+	/*background-color: #777777;*/
 	
 	margin: 5px;
 	padding: 14px;
 }
 
-
+/*-----FOOTER-------*/
+#footer {
+	animation: bounce 1.3s infinite;
+}
 
 
 
