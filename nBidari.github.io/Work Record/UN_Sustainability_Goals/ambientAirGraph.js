@@ -1,74 +1,38 @@
-var myData = "";
-    var staticUrl = 'https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/Work%20Record/Activity%202/data/data.json';
+// var ctx = document.getElementById("ambientAirGraph").getContext('2d');
 
-    var entry = document.getElementById("maxdisplay");
-    var displayContent = document.getElementById("content"); 
-
-    console.log(entry)
-    console.log(displayContent)
-
-    function generateDisplay() {
-        console.log("GENERATE DISPLAY CALLED")
-
-        while (displayContent.getElementsByTagName("div").length > 0) {
-            displayContent.removeChild(displayContent.childNodes[0])
-        }
-
-        $.getJSON(staticUrl, function(data) {
-            
-            console.log(data)
-
-        	iw = window.innerWidth - 100;
-            
-            vstr = data.fact[1].Value;
-            largest = parseInt(vstr.substring(0,vstr.indexOf("[")).replace(" ",""));
-
-
-            for (i = 0; i < 194; i++) {
-
-                vstr = data.fact[i].Value;
-                cval = parseInt(vstr.substring(0,vstr.indexOf("[")).replace(" ",""));
-                if (isNaN(cval) === false && cval < entry.value) {
-                    largest = Math.max(largest,cval)
-                }
-                    
-                
-            
-            }
-
-            for (i = 0; i < 194; i++) {
-
-                col = ["red","green","blue"];
-                
-                vstr = data.fact[i].Value;
-                cval = parseInt(vstr.substring(0,vstr.indexOf("[")).replace(" ",""));
-                
-                if (isNaN(cval) === false && cval < entry.value) {
-              
-                    var div = document.createElement("div");
-                    div.setAttribute("id","div"+i);
-                
-                    val1 = parseInt(cval/largest*iw);
-
-                    document.getElementById("content").appendChild(div);                
-                
-
-                    document.getElementById("div"+i).style.width = val1+"px";
-                    document.getElementById("div"+i).style.backgroundColor = col[i%3];
-                                
-                    var p = document.createElement("p");
-                    p.setAttribute("id","p"+i);
-                    tcountry = String(data.fact[i].dims.COUNTRY);
-
-
-                    document.getElementById("div"+i).appendChild(p);
-                    document.getElementById("p"+i).innerHTML = "<pre>"+tcountry+" - "+cval+"</pre>";    
-                    
-                }
-           
-            }
-        });
-
-    }
-
-    maxdisplay.addEventListener("change", generateDisplay);
+// var myChart = new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//         datasets: [{
+//             label: '# of Votes',
+//             data: [12, 19, 3, 5, 2, 3],
+//             backgroundColor: [
+//                 'rgba(255, 99, 132, 0.2)',
+//                 'rgba(54, 162, 235, 0.2)',
+//                 'rgba(255, 206, 86, 0.2)',
+//                 'rgba(75, 192, 192, 0.2)',
+//                 'rgba(153, 102, 255, 0.2)',
+//                 'rgba(255, 159, 64, 0.2)'
+//             ],
+//             borderColor: [
+//                 'rgba(255, 99, 132, 1)',
+//                 'rgba(54, 162, 235, 1)',
+//                 'rgba(255, 206, 86, 1)',
+//                 'rgba(75, 192, 192, 1)',
+//                 'rgba(153, 102, 255, 1)',
+//                 'rgba(255, 159, 64, 1)'
+//             ],
+//             borderWidth: 1
+//         }]
+//     },
+//     options: {
+//         scales: {
+//             yAxes: [{
+//                 ticks: {
+//                     beginAtZero: true
+//                 }
+//             }]
+//         }
+//     }
+// });

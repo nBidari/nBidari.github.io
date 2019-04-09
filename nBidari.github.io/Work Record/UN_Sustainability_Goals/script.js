@@ -5,7 +5,7 @@
 
 // /*This part is so that the sidebar stays visible for a little bit before
 // shading back off.*/
-// function init() {
+// function init() 
 // 	sidebar = document.getElementById("sidebar");
 // 	sidebar.style.opacity = "0.7";
 
@@ -31,15 +31,16 @@
 
 
 var footer;
-showActivity(1);
+footer = document.getElementById("footer")
+showActivity(0);
 
 window.onload = function() {
-	footer = document.getElementById("footer")
 	footer.style.webkitAnimationPlayState = "running";
 };
 
 function turnOffAnimation() {
 	footer.style.webkitAnimationPlayState = "paused";
+	console.log("animation paused")
 }
 
 

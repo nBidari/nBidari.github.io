@@ -40,6 +40,10 @@ e.parentNode.insertBefore(L,e);  };  })(  window,document,'script','_aqiFeed'  )
 
 // AIR QUALITY WIDGET
 var chosenLang, chosenCity;
+
+// This was done by hand because only certain cities work with the API. They are NOT
+// specified by the developers of the API, meaning I found the major cities that DO
+// work and put them in by hand.
 var cityValues = ['brisbane', 'melbourne', 'sydney', 'vienna', 'calgary', 'toronto', 'montreal','baoding', 'beijing', 'changchun', 'changsha', 'chengdu', 'dongguan', 'guangzhou', 'hangzhou', 'hongkong', 'shanghai', 'shenzhen','prague', 'cairo', 'giza', 'paris', 'berlin', 'newdelhi', 'jakarta', 'isfahan', 'tehran', 'milan', 'rome', 'hiroshima', 'kyoto', 'tokyo', 'yokohama', 'busan', 'seoul','moscow', 'barcelona', 'madrid', 'london', 'chigaco', 'philadelphia']
 var cityText = titleMaker(cityValues);
 var langDropdown = document.getElementById("languageDropdown");
