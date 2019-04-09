@@ -54,6 +54,7 @@ select {
 #intro p{
 	width: 70%;
 	padding: 14px 16px;
+	margin-top: 70px;
 
 	border: 6px solid #213440;
 	border-radius: 10px;

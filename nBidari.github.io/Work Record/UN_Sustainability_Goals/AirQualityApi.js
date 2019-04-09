@@ -32,6 +32,12 @@
 
 */
 
+//Base Code
+(function(w,d,t,f){  w[f]=w[f]||function(c,k,n){s=w[f],k=s['k']=(s['k']||(k?('&k='+k):''));s['c']=  
+c=(c  instanceof  Array)?c:[c];s['n']=n=n||0;L=d.createElement(t),e=d.getElementsByTagName(t)[0];  
+L.async=1;L.src='//feed.aqicn.org/feed/'+(c[n].city)+'/'+(c[n].lang||'')+'/feed.v1.js?n='+n+k;  
+e.parentNode.insertBefore(L,e);  };  })(  window,document,'script','_aqiFeed'  );
+
 // AIR QUALITY WIDGET
 var chosenLang, chosenCity;
 var cityValues = ['brisbane', 'melbourne', 'sydney', 'vienna', 'calgary', 'toronto', 'montreal','baoding', 'beijing', 'changchun', 'changsha', 'chengdu', 'dongguan', 'guangzhou', 'hangzhou', 'hongkong', 'shanghai', 'shenzhen','prague', 'cairo', 'giza', 'paris', 'berlin', 'newdelhi', 'jakarta', 'isfahan', 'tehran', 'milan', 'rome', 'hiroshima', 'kyoto', 'tokyo', 'yokohama', 'busan', 'seoul','moscow', 'barcelona', 'madrid', 'london', 'chigaco', 'philadelphia']
@@ -73,11 +79,6 @@ function aqiChange(language, chosenCity) {
 	});
 }
 
-//Base Code
-(function(w,d,t,f){  w[f]=w[f]||function(c,k,n){s=w[f],k=s['k']=(s['k']||(k?('&k='+k):''));s['c']=  
-c=(c  instanceof  Array)?c:[c];s['n']=n=n||0;L=d.createElement(t),e=d.getElementsByTagName(t)[0];  
-L.async=1;L.src='//feed.aqicn.org/feed/'+(c[n].city)+'/'+(c[n].lang||'')+'/feed.v1.js?n='+n+k;  
-e.parentNode.insertBefore(L,e);  };  })(  window,document,'script','_aqiFeed'  );
 
 //Calling object
 // _aqiFeed({    
