@@ -36,3 +36,20 @@
 //         }
 //     }
 // });
+
+var myData = [];
+
+var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json';
+
+	$.getJSON(staticUrl, function(data) {
+
+	});
+
+function setup() {
+	var canvas = createCanvas(300,300);
+	canvas.parent('ambientAirGraph');
+}
+
+function draw() {
+	background(0);
+}

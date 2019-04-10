@@ -113,6 +113,15 @@ select {
 	justify-content: center;
 }
 
+/*Ambient Air Graph*/
+#ambientAirGraph-container {
+	justify-content: center;
+	text-align: center;
+
+	padding: 14px;
+	margin: 4px 2px;
+}
+
 
 
 /*FLIP BOX QUIZ*/
