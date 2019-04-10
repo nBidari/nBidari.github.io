@@ -41,6 +41,9 @@ ctx.strokeStyle = CANVAS_BORDER_COLOUR
 ctx.fillRect(0,0,gameCanvas.width, gameCanvas.height)
 ctx.strokeRect(0,0,gameCanvas.width, gameCanvas.height)
 
+//PAUSE FEATURE
+var go = true;
+
 
 
 
@@ -63,9 +66,12 @@ function main() {
 
 
 	setTimeout(function onTick() {
+		if(go) {
+			advanceSnake()
+		}
+
 		clearCanvas()
 		drawFood()
-		advanceSnake()
 		drawSnake()
 
 		main()
@@ -81,28 +87,6 @@ function clearCanvas() {
 	ctx.strokeRect(0,0,gameCanvas.width, gameCanvas.height)
 }
 
-//This function checks if the game ends. If it does, it returns true
-function didGameEnd() {
-
-	//Checks for each block to see if it collided
-	for (let i = 4; i < snake.length; i++) {
-		//starts at 4 because we already have 4 blocks
-
-		//Just checks if any of the x,y pairs are equal
-		const didCollide = snake[i].x === snake[0].x && snake[i].y == snake[0].y
-		if (didCollide) return true
-	}
-
-	//These are just if consts, not necessary but look nice I guess?
-	/*
-	const hitLeftWall = snake[0].x < 0
-	const hitRightWall = snake[0].x > gameCanvas.width - 20
-	const hitTopWall = snake[0].y < 0
-	const hitBottomwall = snake[0].y > gameCanvas.height - 20
-
-	return hitLeftWall || hitRightWall || hitTopWall || hitBottomwall
-	*/
-}
 
 /*
 This is a restart game function
@@ -111,6 +95,10 @@ I want to use this so that everytime the didGameEnd function
 returns true, it just resets.
 */
 function restartGame() {
+	console.log(snake[0].x + " " + snake[0].y)
+	console.log(snake[1].x + " " + snake[1].y)
+	console.log("---------------")
+	
 	score = 0
 	drawFood()
 
@@ -126,6 +114,7 @@ function restartGame() {
 
 	]
 	document.getElementById('score').innerHTML = "Score: " + score
+	go = false;
 
 }
 
@@ -152,7 +141,10 @@ function didGameEnd() {
 
 		//Just checks if any of the x,y pairs are equal
 		const didCollide = snake[i].x === snake[0].x && snake[i].y == snake[0].y
-		if (didCollide) return true
+		if (didCollide) {
+			go = false;
+			return true
+		}
 	}
 
 	//These are just if consts, not necessary but look nice I guess?
@@ -229,6 +221,10 @@ function changeDirection(event) {
 		const goingDown = dy === 20;
 		const goingRight = dx === 20;
 		const goingLeft = dx === -20;
+		if(keyPressed) {
+			go = true;
+		}
+
 		if (keyPressed === LEFT_KEY && !goingRight) {
 			dx = -20;
 			dy = 0;
