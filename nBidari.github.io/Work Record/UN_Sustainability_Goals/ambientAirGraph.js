@@ -39,10 +39,10 @@
 
 var myData = [];
 
-var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json';
+var staticUrl = 'https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/nBidari.github.io/Work%20Record/UN_Sustainability_Goals/data/ambientAir-householdAir.json';
 
 	$.getJSON(staticUrl, function(data) {
-
+		console.log(data)
 	});
 
 function setup() {
