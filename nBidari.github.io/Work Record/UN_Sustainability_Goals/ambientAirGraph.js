@@ -37,19 +37,31 @@
 //     }
 // });
 
-var myData = [];
+var data = [];
 
 var staticUrl = 'https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/nBidari.github.io/Work%20Record/UN_Sustainability_Goals/data/ambientAir-householdAir.json';
 
-	$.getJSON(staticUrl, function(data) {
+	$.getJSON(staticUrl, function(JSONdata) {
+			for (var i=0; i<14; i+=2) {
+				data.push(JSONdata.fact[i].Value)
+			}
+		
+
 		console.log(data)
 	});
 
 function setup() {
-	var canvas = createCanvas(300,300);
+	var canvas = createCanvas(600,300);
 	canvas.parent('ambientAirGraph');
 }
 
 function draw() {
-	background(0);
+	background(0)
+	// data.forEach()
 }
+
+
+
+
+
+

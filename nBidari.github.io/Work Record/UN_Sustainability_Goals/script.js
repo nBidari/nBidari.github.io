@@ -52,7 +52,7 @@ function showActivity(n) {
 		x[1].style.display = 'block';
 		console.log("Show Ambient Air")
 	}else {	//AQI is showm
-		x[1].style.display = 'flex';
+		x[1].style.display = 'none';
 		x[0].style.display = 'block';
 		console.log("Show AQI")
 	}
