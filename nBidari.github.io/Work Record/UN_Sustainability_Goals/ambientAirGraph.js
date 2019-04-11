@@ -40,6 +40,8 @@
 var data = [[],
 			[]];
 
+let colourList = ["#0D2BFF", '#0C61E8', '#00A7FF', '#0CD5E8', '#0DFFD1'];
+
 var staticUrl = 'https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/nBidari.github.io/Work%20Record/UN_Sustainability_Goals/data/ambientAir-householdAir.json';
 
 	$.getJSON(staticUrl, function(JSONdata) {
@@ -51,49 +53,29 @@ var staticUrl = 'https://raw.githubusercontent.com/nBidari/nBidari.github.io/mas
 	});
 
 function setup() {
-	background(175)
 
-	var width = 300, // canvas width and height
-		height = 600,
-		margin = 15,
+	var width = 600, // canvas width and height
+		height = 300,
+		margin = 20,
 		w = width - 2 * margin, // chart area width and height
 		h = height - 2 * margin;
 
-	var barWidth =  (h / data.length) * 0.5; // width of bar
-	var barMargin = (h / data.length) * 0.1; // margin between two bars
+	var barWidth =  (h / data.length) * 0.8; // width of bar
+	var barMargin = (h / data.length) * 0.2; // margin between two bars
 
 	var canvas = createCanvas(width, height);
 	canvas.parent('ambientAirGraph');
 
-	textSize(14);
+	background('#0c69ff')
 
-	// Push and Pop are like containers of style. if you push, 
-	// change style, then pop, that style is rest to whatever 
-	// it was before the push
+	fill(0);
 
-	push();
-
-	for(var i=0; i<data.length; i++) {
-		push();
-		fill('steelblue');
-		noStroke();
-		translate(0, i* (barWidth + barMargin)); // jump to the top right corner of the bar
-		rect(0, 0, data[0][i], barWidth); // draw rect
-
-		fill(200);
-		text(data[0][i], 5, barWidth/2 + 5);
-		text("0") // write data
-
-		pop();
+	for (var i=0; i<7; i++) {
+		translate(i* (barWidth + barMargin),0);
+		rect(0, 0, barWidth, data[0][i]*2);
 	}
-
-	pop();
-	}
-
-function draw() {
-
+	rect(30, 300-96.7, 50, 96.7);
 }
-
 
 
 
