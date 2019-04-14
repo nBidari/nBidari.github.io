@@ -59,11 +59,11 @@ select {
 	border: 6px solid #213440;
 	border-radius: 10px;
 
-	background-color: #c1c1c1;
-	color: white;
+	background-color: #9bc0ff;
+	color: black;
 
 	font-size: 30px;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
 }
 
 /*Interactivities*/
