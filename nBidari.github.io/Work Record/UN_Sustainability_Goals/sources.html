@@ -3,7 +3,6 @@
 <head>
 	<!-- My Files -->
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
 	<!-- FONTS -->
@@ -19,12 +18,14 @@
 	</script> 
 
 	<style>
+
 		/*ACTIVITY BAR*/
 		#sourceBar {
-			justify-content: center;
-			background-color: red;
+			position: fixed;
 
-			width: auto;
+			justify-content: center;
+
+			width: 100%;
 
 			border-radius: 10px;
 		}
@@ -60,11 +61,66 @@
 		}
 
 		.sources {
-			margin-top: 50px;
+			width: 75%;
+			opacity: 0.5;
+		}
+		.sources p{
+			text-indent: 2%;
+			text-align: justify;
 		}
 
-		.sources:nth-child(1) {
-			display: block;
+		.sourceButtonContainer {
+			display: flex;
+			flex-wrap: wrap;
+
+			align-content: center;
+			justify-content: center;
+
+			margin: 14px 16px;
+		}
+
+		.sourceButtonContainer > input {
+			margin: 5px 8px;
+			opacity: 0.8;
+
+			border-radius: 15px;
+			cursor: pointer;
+		}
+
+		.sourceButtonContainer > input:hover {
+			opacity: 1;
+		}
+
+		.sourceButtonContainer a {
+			font-family: 'Wendy One', sans-serif;
+			text-align: center;
+			text-decoration: none;
+			font-size: 25px;
+
+			background-color: #7caeff;
+			color: #161616;
+
+			border: none;
+			border-radius: 5px;
+
+			padding: 14px;
+			margin: 4px 2px;
+
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		#goal3Button a{
+			background-color: #00af0e;
+		}
+		#goal7Button a{
+			background-color: #E8AB00;
+		}
+		#linkButton a{
+			background-color: #FF0000;
+		}
+		#otherButton a{
+			background-color: #0B19E8;
 		}
 	</style>
 </head>
@@ -84,23 +140,50 @@
 		</div></center>
 
 		<!--Sources Pages-->
-		<div>
-			<div class="sources">
-				<p>mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt</p>
+		<center><div>
+
+			<br><br><br><br><br><br>
+			<div class="sources" style="opacity: 1">
+				<h1>Goal 3</h1>
+				<div class="sourceButtonContainer" id="goal3Button">
+					<a href="https://www.who.int/gho/phe/indoor_air_pollution/burden/en/">Household Air Pollution</a>
+					<a href="https://aqicn.org/api/">Air Quality Widget (WARNING: <b>for advanced user only</b>!)</a>
+					<a href="https://www.globalgoals.org/3-good-health-and-well-being">Good Health and Well-Being (GlobalGoals.org)</a>
+					<a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-3-good-health-and-well-being.html">Good Health and Well-Being (UN)</a>
+				</div>
 			</div>
 
 			<div class="sources">
-				<p>mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt</p>
+				<h1>Goal 7</h1>
+				<div class="sourceButtonContainer" id="goal7Button">
+					<a href="https://www.who.int/gho/phe/outdoor_air_pollution/burden/en/">Ambient Air Pollution</a>
+					<a href="https://eerscmap.usgs.gov/uswtdb/">USWTD</a>
+					<a href="https://eerscmap.usgs.gov/uswtdb/viewer/#3/37.25/-96.25">USWTD Viewer</a>
+					<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6328135/">Unintended Consequences of Wind Power</a>
+					<a href="https://www.google.com/search?q=Wind+Turbines+Are+Neither+Clean+Nor+Green+And+They+Provide+Zero+Global+Energy+%7C+The+Spectator.&rlz=1C1CHBF_enCA795CA795&oq=Wind+Turbines+Are+Neither+Clean+Nor+Green+And+They+Provide+Zero+Global+Energy+%7C+The+Spectator.&aqs=chrome..69i57.365j0j9&sourceid=chrome&ie=UTF-8">Are Wind Turbines <i>Really</i> Clean?</a>
+					<a href="https://kohilowind.com/kohilo-university/201-wind-energy-benefits-challenges/">Advantages <i>and</i> Limitations to Wind Power</a>
+					<a href="https://www.energy.gov/eere/wind/advantages-and-challenges-wind-energy">More Advantages <i>and</i> Limitations to Wind Power</a>
+					<a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-7-affordable-and-clean-energy.html">Affordable and Clean Energy (UN)</a>
+				</div>
 			</div>
 
 			<div class="sources">
-				<p>mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt</p>
+				<h1>Link</h1>
+				<div class="sourceButtonContainer" id="linkButton">
+					<a href="https://www.ncbi.nlm.nih.gov/pubmed/26502459">Cognitive Function with Carbon Dioxide Exposure in Workers</a>
+					<a href="https://ehp.niehs.nih.gov/doi/10.1289/ehp.1510037">Cognitive Function with Carbon Dioxide Exposure in Workers (<i>simplified</i>)</a>
+				</div>
 			</div>
 
 			<div class="sources">
-				<p>mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie at elementum eu facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat in fermentum posuere urna nec tincidunt</p>
+				<h1>Generally Great Sources</h1>
+				<div class="sourceButtonContainer" id="otherButton">
+					<a href="https://www.un.org/development/desa/disabilities/envision2030.html">UN SDG's</a>
+					<a href="https://sustainabledevelopment.un.org/?menu=1300">UN Sustainability Goals Main Page</a>
+					<a href="https://www.who.int/gho/database/en/">World Health Organization Data Repository</a>
+				</div>
 			</div>
-		</div>
+		</div></center>
 	</div>
 </div>
 
@@ -110,12 +193,19 @@
 	var linkButton = document.getElementsByClassName("sourceBarButton")[2]
 	var otherButton = document.getElementsByClassName("sourceBarButton")[3]
 
+	var sourcesText = document.getElementsByClassName("sources")
+
 	function goal3() {
 		goal3Button.style.opacity="1";
-
 		goal7Button.style.opacity="0.5";
 		linkButton.style.opacity="0.5";
 		otherButton.style.opacity="0.5";
+
+		sourcesText[0].style.opacity="1";
+		sourcesText[1].style.opacity="0.5";
+		sourcesText[2].style.opacity="0.5";
+		sourcesText[3].style.opacity="0.5";
+
 	}
 
 	function goal7() {
@@ -124,6 +214,11 @@
 		goal3Button.style.opacity="0.5";
 		linkButton.style.opacity="0.5";
 		otherButton.style.opacity="0.5";
+
+		sourcesText[1].style.opacity="1";
+		sourcesText[0].style.opacity="0.5";
+		sourcesText[2].style.opacity="0.5";
+		sourcesText[3].style.opacity="0.5";
 	}
 
 	function link() {
@@ -132,6 +227,11 @@
 		goal7Button.style.opacity="0.5";
 		goal3Button.style.opacity="0.5";
 		otherButton.style.opacity="0.5";
+
+		sourcesText[2].style.opacity="1";
+		sourcesText[1].style.opacity="0.5";
+		sourcesText[0].style.opacity="0.5";
+		sourcesText[3].style.opacity="0.5";
 	}
 
 	function other() {
@@ -140,6 +240,11 @@
 		goal7Button.style.opacity="0.5";
 		linkButton.style.opacity="0.5";
 		goal3Button.style.opacity="0.5";
+
+		sourcesText[3].style.opacity="1";
+		sourcesText[1].style.opacity="0.5";
+		sourcesText[2].style.opacity="0.5";
+		sourcesText[0].style.opacity="0.5";
 	}
 </script>
 
