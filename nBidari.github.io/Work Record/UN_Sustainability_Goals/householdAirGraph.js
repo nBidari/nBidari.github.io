@@ -1,3 +1,42 @@
+// var ctx = document.getElementById("ambientAirGraph").getContext('2d');
+
+// var myChart = new Chart(ctx, {
+//     type: 'bar',
+//     data: {
+//         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//         datasets: [{
+//             label: '# of Votes',
+//             data: [12, 19, 3, 5, 2, 3],
+//             backgroundColor: [
+//                 'rgba(255, 99, 132, 0.2)',
+//                 'rgba(54, 162, 235, 0.2)',
+//                 'rgba(255, 206, 86, 0.2)',
+//                 'rgba(75, 192, 192, 0.2)',
+//                 'rgba(153, 102, 255, 0.2)',
+//                 'rgba(255, 159, 64, 0.2)'
+//             ],
+//             borderColor: [
+//                 'rgba(255, 99, 132, 1)',
+//                 'rgba(54, 162, 235, 1)',
+//                 'rgba(255, 206, 86, 1)',
+//                 'rgba(75, 192, 192, 1)',
+//                 'rgba(153, 102, 255, 1)',
+//                 'rgba(255, 159, 64, 1)'
+//             ],
+//             borderWidth: 1
+//         }]
+//     },
+//     options: {
+//         scales: {
+//             yAxes: [{
+//                 ticks: {
+//                     beginAtZero: true
+//                 }
+//             }]
+//         }
+//     }
+// });
+
 var data = [[],
 			[]];
 
@@ -6,14 +45,12 @@ let colourList = ["#FF8F61", '#FF1701', '#FFE70A', '#ffffff', '#00FFEB', '#FF00F
 var staticUrl = 'https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/nBidari.github.io/Work%20Record/UN_Sustainability_Goals/data/ambientAir-householdAir.json';
 
 	$.getJSON(staticUrl, function(JSONdata) {
-			for (var j=2; j<14; j+=2) {
+			for (var j=1; j<14; j+=2) {
 				data[0].push(parseInt(JSONdata.fact[j].Value))
 				data[1].push(JSONdata.fact[j].dims.REGION)
 			}
 		console.log(data)
 	});
-
-
 
 function setup() {
 	const barMargin = 40; //Setting constants
@@ -22,7 +59,7 @@ function setup() {
 
 
 	var canvas = createCanvas(800,300);
-	canvas.parent('ambientAirGraph');
+	canvas.parent('householdAirGraph');
 
 	background('#70a7ff');
 	fill(0);
@@ -30,11 +67,11 @@ function setup() {
 	textAlign(CENTER,CENTER);
 	textFont('Helvetica');
 	textSize(25);
-	text('Deaths per 100 000 by Ambient Air Pollution, 2017', 400, 30);
+	text('Deaths per 100 000 by Household Air Pollution, 2017', 400, 30);
 
 
 	for (var i=0; i<7; i++) { //Creating the Graph
-		let dblData = (data[0][i] * 2); //Increasing data so that it seems bigger (keeps the same ratio)
+		let dblData = (data[0][i] * 1.5); //Increasing data so that it seems bigger (keeps the same ratio)
 		let x = barMargin /*Instance of the margin*/ +(barMargin+barWidth)*i;
 		let y = 300-dblData;
 
@@ -92,6 +129,16 @@ function setup() {
 	rect(700, 175, 20, 20, 5);
 	text(data[1][5], 695, 185);
 
+	textAlign(LEFT,CENTER);
+	fill(colourList[6]);
+	rect(600, 200, 20, 20, 5);
+	text(data[1][6], 625, 210);
+
 	pop();
 	///////////////
 }
+
+
+
+
+

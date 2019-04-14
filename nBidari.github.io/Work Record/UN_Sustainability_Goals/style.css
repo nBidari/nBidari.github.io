@@ -39,6 +39,16 @@ select {
 	color: white;
 }
 
+h1 {
+	font-size: 51px;
+	font-family: 'Bubbler One', sans-serif;
+}	
+
+p {
+	text-align: justify;
+	text-indent: 5%;
+}
+
 #content {
 	margin-top: 65px;
 	margin-bottom: 60px;
@@ -65,6 +75,42 @@ select {
 	font-size: 30px;
 	letter-spacing: 1px;
 }
+
+/*BODY*/
+#bodyInfo {
+	font-family: 'Catamaran', sans-serif;
+	width: 100%;
+}
+
+#bodyInfo p{
+	width: 80%;
+	padding: 14px 16px;
+
+	border: 6px solid #213440;
+	border-radius: 10px;
+
+	background-color: #7faeff;
+	color: #262626;
+
+	font-size: 20px;
+}
+/*********/
+
+/*PARRALLAX EFFECT*/
+.parallax {
+	/* The image used */
+	background-image: url("assets/goalxbackground.jpg");
+
+	/* Set a specific height */
+	min-height: 600px; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/******************/
 
 /*Interactivities*/
 #interactivities {
@@ -114,12 +160,17 @@ select {
 }
 
 /*Ambient Air Graph*/
-#ambientAirGraph-container {
+#householdAirGraph-container {
 	justify-content: center;
 	text-align: center;
 
 	padding: 14px;
 	margin: 4px 2px;
+}
+
+#ambientAirGraph-container {
+	justify-content: center;
+	text-align: center;
 }
 
 

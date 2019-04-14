@@ -29,7 +29,6 @@
 // }
 
 
-
 var footer;
 footer = document.getElementById("footer")
 showActivity(0);
@@ -49,12 +48,15 @@ function showActivity(n) {
 	let x = document.getElementsByClassName("activity");
 	if (n == 0) { //Ambient Air Pollution is showm
 		x[0].style.display = 'none';
-		x[1].style.display = 'block';
-		console.log("Show Ambient Air")
-	}else {	//AQI is showm
+		x[1].style.display = 'block'; 
+		console.log("Show Household Air")
+	}else if(n == 1) {	//AQI is showm
 		x[1].style.display = 'none';
 		x[0].style.display = 'block';
 		console.log("Show AQI")
+	}else {
+		x[0].style.display = 'block';
+		console.log("Show Ambient Air")
 	}
 
 	// console.log("it worked!")

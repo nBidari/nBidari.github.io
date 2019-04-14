@@ -3,14 +3,25 @@
 <head>
 	<!-- My Files -->
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<link rel="stylesheet" href="animate.css">
 	<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
 
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<!-- P5.js -->
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
 
 
 	<title>Linking Them!</title>
 
 	<style>
+
+		@media only screen and (min-width: 500px) {
+			.sidebar li a {font-size: 11px; width: 30px;}
+		}
+
 		/*--------Sidebar---------*/
 
 		.sidebar {
@@ -86,7 +97,38 @@
 			background-color: #0B19E8;
 		}
 		/*----------------------*/
+
+		/*Gallery Container*/
+		.galleryContainer {
+			display: flex;
+			flex-wrap: wrap;
+
+			align-content: center;
+			justify-content: center;
+
+			margin: 14px 16px;
+		}
+
+		.galleryContainer > img {
+			margin: 5px 8px;
+			opacity: 0.8;
+
+			border-radius: 15px;
+		}
+		.galleryContainer > img:hover {
+			opacity: 1;
+		}
+
+		.link {
+			cursor: pointer;
+		}
 	</style>
+
+	<script> 
+		$(function(){
+		  $("#footer").load("jqueryImports/footer.html");
+		});
+	</script> 
 </head>
 <body>
 
@@ -99,19 +141,55 @@
 </div>
 
 <!--Introduction Picture (Parallax)-->
-<div></div>
+<div class="parallax"></div>
 
 <!--Introduction Text-->
-<div></div>
+<div id="intro">
+	<center>
+	<h1>Affects Fossil Feuls Have On Your Health</h1>
+
+	<p style="margin-bottom: 5px; margin-top: 0px;">According to the <a href="https://www.who.int/">WHO</a>, 91% of the world's population lives in an area that exceeds their air quality standards. As a result, 4.2 <b>MILLION</b> people die every year due to ambient air pollution. This area of health does not take into account house air dirtiness (which is surprisingly high as well). These deaths are attributed to stroke, heart disease, lung cancer and other chronic respiratory diseases. All of this population is meager due to poor waste management and poor infrastructure. It is mostly due to greenhouse gases, cause by "dirty energy".</p>
+
+	<p style="margin-top: 0px; margin-bottom: 5px;">On good summer days (right), Beijing can be relatively clear, although not clean. High levels of <a href="https://www.youtube.com/watch?v=xFE9o-c_pKg">CO<sub>2</sub></a>, above about 1000 <a href="http://www.kids.net.au/encyclopedia-wiki/pa/Parts_per_million">ppm</a>, causes lowered cognitive function. At about 1400 <a href="http://www.kids.net.au/encyclopedia-wiki/pa/Parts_per_million">ppm</a> of <a href="https://www.youtube.com/watch?v=xFE9o-c_pKg">CO<sub>2</sub></a>, we lose 16% of our cognitive function. Days like the picture on the right can be about 500 <a href="http://www.kids.net.au/encyclopedia-wiki/pa/Parts_per_million">ppm</a>, at some points reaching 600 (city centers and roofed areas). Within a hundred years, the CO2 <a href="http://www.kids.net.au/encyclopedia-wiki/pa/Parts_per_million">ppm</a> level overall on the world would be at the point where as a species, we will lose 20% of our cognitive function due to CO2 poisoning.</p>
+	</center></div>
+
+<!--More Info Gallery -->
+	<center><h2>Gallery</h2></center>
+	<div class="galleryContainer">
+		<img class="link" href="https://greenliving.lovetoknow.com/Efficiency_of_Wind_Energy"src="assets/windTurbineEfficiencyExplained.jpg">
+		<img class="link" href="https://thekidshouldseethis.com/post/annotated-time-lapse-assembly-of-a-wind-turbine"src="assets/windEnergyExplained.png">
+		<img src="assets/windTurbineGif.gif">
+		<img class="link" href="https://www.youtube.com/watch?v=UunEn6uHIo4" src="assets/renewableEnergySong.jpg">
+	</div>
 
 <!--Body Information-->
-<div></div>
+<div id="bodyInfo">
+	<center>
+	<p>Wind turbines pay themselves back within 2 years, and last about 20 years. The downside is that there is a limit to what electricity a turbine can produce(<a href="https://easyscienceforkids.com/wind-energy-facts-video-for-kids/">Betz's Law</a>). On the other hand, they are extremely clean and affordable. They release almost no emissions (apart from construction). In terms of effects on animals, study's show that nocturnal animals (animals that stay awake at night) and day animals both steer away or above wind turbines due to the <a href="https://kids.kiddle.co/Fluorescence">fluorescence</a> of the paint and colour that is used.</p>
 
-<!--Interactive Graphs-->
-<div></div>
+	<p>There's more. Wind turbines are much safer, for us. Every year, there are more deaths caused by other fossil feuls (due to <a href="https://kidshealth.org/en/kids/electric-shock.html">electrocution</a>). <i style="font-size: 13px;">See below.</i></p>
+	</center>
+</div>
 
-<!--Solutions-->
-<div></div>
+<!--Graphs-->
+<div class="galleryContainer">
+	
+</div>
 
+<div id="footer"></div>
+
+<script>
+	var footer;
+	footer = document.getElementById("footer");
+
+	window.onload = function() {
+		footer.style.webkitAnimationPlayState = "running";
+	};
+
+	function turnOffAnimation() {
+		footer.style.webkitAnimationPlayState = "paused";
+		console.log("animation paused")
+	}
+</script>
 </body>
 </html>
