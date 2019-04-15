@@ -36,39 +36,39 @@ function AI() {
 
 		this.pos.y = ball.pos.y - this.height/2;
 		
-		// if (this.hitBall) {
+		if (this.hitBall) {
 
-		// 	this.spd = constrain(this.spd, -this.maxSpd, this.maxSpd);
+			this.spd = constrain(this.spd, -this.maxSpd, this.maxSpd);
 
-		// 	if (ball.pos.y >= this.pos.y && ball.pos.y <= this.pos.y + this.height) {
-		// 		this.pos.y = this.pos.y;
-		// 	}else if(ball.pos.y < this.pos.y) { //ball is above it.
-		// 		this.acc.y -= this.spd;
-		// 	}else {
-		// 		this.acc.y += this.spd;
-		// 	}
+			if (ball.pos.y >= this.pos.y && ball.pos.y <= this.pos.y + this.height) {
+				this.pos.y = this.pos.y;
+			}else if(ball.pos.y < this.pos.y) { //ball is above it.
+				this.acc.y -= this.spd;
+			}else {
+				this.acc.y += this.spd;
+			}
 
-		// 	this.acc.y = constrain(this.acc.y, -this.maxSpd, this.maxSpd);
+			this.acc.y = constrain(this.acc.y, -this.maxSpd, this.maxSpd);
 
-		// 	this.pos.y = constrain(this.pos.y, 0, height-this.height);
-		// 	this.pos.add(this.acc);
-		// 	//this.pos.y = ball.pos.y - this.height/2;
-		// }else {
-		// 	this.spd = constrain(this.spd, -this.maxSpd, this.maxSpd);
+			this.pos.y = constrain(this.pos.y, 0, height-this.height);
+			this.pos.add(this.acc);
+			//this.pos.y = ball.pos.y - this.height/2;
+		}else {
+			this.spd = constrain(this.spd, -this.maxSpd, this.maxSpd);
 
-		// 	if (fakeBallPos >= this.pos.y && fakeBallPos <= this.pos.y + this.height) {
-		// 		this.pos.y = this.pos.y;
-		// 	}else if(fakeBallPos < this.pos.y + 20) { //ball is above it.
-		// 		this.acc.y -= this.spd;
-		// 	}else if (fakeBallPos > this.pos.y - 20) {
-		// 		this.acc.y += this.spd;
-		// 	}
+			if (fakeBallPos >= this.pos.y && fakeBallPos <= this.pos.y + this.height) {
+				this.pos.y = this.pos.y;
+			}else if(fakeBallPos < this.pos.y + 20) { //ball is above it.
+				this.acc.y -= this.spd;
+			}else if (fakeBallPos > this.pos.y - 20) {
+				this.acc.y += this.spd;
+			}
 
-		// 	this.acc.y = constrain(this.acc.y, -this.maxSpd, this.maxSpd);
+			this.acc.y = constrain(this.acc.y, -this.maxSpd, this.maxSpd);
 
-		// 	this.pos.y = constrain(this.pos.y, 0, height-this.height);
-		// 	this.pos.add(this.acc);
-		// }
+			this.pos.y = constrain(this.pos.y, 0, height-this.height);
+			this.pos.add(this.acc);
+		}
 
 		//THIS IS AN ALGORITHM THAT I FOUND ONLINE
 		/*if(ball.pos.y < this.pos.y - this.height/2) { //ball is above it.
