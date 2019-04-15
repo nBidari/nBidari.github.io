@@ -133,10 +133,10 @@
 	<div>
 		<!--Source Bar-->
 		<center><div id="sourceBar">
-			<input style="background-color: #00af0e;" type="button" class="sourceBarButton" value="Goal 3 Sources!" onclick=goal3()>
-			<input style="background-color: #E8AB00;" type="button" class="sourceBarButton" value="Goal 7 Sources!" onclick=goal7()>
-			<input style="background-color: #FF0000;" type="button" class="sourceBarButton" value="Linking Them Sources!" onclick=link()>
-			<input style="background-color: #0B19E8;" type="button" class="sourceBarButton" value="Generally Great Sources!" onclick=other()>
+			<input style="background-color: #00af0e;" type="button" href="goal3Button" class="sourceBarButton" value="Goal 3 Sources!" onclick=goal3()>
+			<input style="background-color: #E8AB00;" type="button" href="goal7Button" class="sourceBarButton" value="Goal 7 Sources!" onclick=goal7()>
+			<input style="background-color: #FF0000;" type="button" href="linkButton" class="sourceBarButton" value="Linking Them Sources!" onclick=link()>
+			<input style="background-color: #0B19E8;" type="button" href="otherButton" class="sourceBarButton" value="Generally Great Sources!" onclick=other()>
 		</div></center>
 
 		<!--Sources Pages-->
@@ -248,6 +248,19 @@
 		sourcesText[2].style.opacity="0.5";
 		sourcesText[0].style.opacity="0.5";
 	}
+
+	// $('.sourceBarButton').on('click',function (e) {
+	// 	e.preventDefault()
+
+	// 	$('html, body').animate(
+	// 	{
+	// 	scrollTop: $($(this).attr('href')).offset(),
+	// 	},
+	// 	500,
+	// 	'linear'
+	// 	)
+	// })
+
 </script>
 
 
