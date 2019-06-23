@@ -40,13 +40,25 @@ const googleLogin = () => {
 //Updates display name at the top right every time user logs in or out
 firebase.auth().onAuthStateChanged(function(user) {
 	if (user) { //USER SIGNED IN
+		const pfpURL = user.photoURL //userprofile accessed to get url of photo from google+
+		const pfp = document.getElementsByClassName("pfp")[0] //pfp element on DOM
+
+		pfp.style.backgroundImage = "url(" + pfpURL + ")" //requires extra stuff because its CSS
+
 		loginButton.innerHTML = user.displayName.toUpperCase()
 		loggedIn = true //Used in database stuff auth().currentUser
-		                //Used in other scenarios       
+		                //Used in other scenarios
+		
+		loginButton.style.color = "#4453ba"
 
 	} else { //USER NOT SIGNED IN
+		const pfp = document.getElementsByClassName("pfp")[0] //pfp element on DOM
+
 		loginButton.innerHTML = "SIGN IN"
 		loggedIn = false;
+		loginButton.style.color = "#65c91a"
+
+		pfp.style.backgroundImage = "url(../assets/avatar.png)"
 	}
 });
 
