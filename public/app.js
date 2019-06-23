@@ -58,7 +58,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 		loggedIn = false;
 		loginButton.style.color = "#65c91a"
 
-		pfp.style.backgroundImage = "url(../assets/avatar.png)"
+		pfp.style.backgroundImage = "url(https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/assets/avatar.png)"
 	}
 });
 
