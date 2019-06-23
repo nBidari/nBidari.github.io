@@ -2,7 +2,12 @@ var loggedIn = false
 
 const loginButton = document.getElementById("loginButton")
 
+//Firebase config
+/*  The firebase config is something that the users computer needs to know
+	Its safe to leave it visible to the public so its not necessary to protect it
 
+	The API key is the one that really matters and it is what allows the users
+	computer to interact with the firebase app.*/
 var firebaseConfig = {
 	apiKey: "AIzaSyCwluasbfjPrJs1NpYOeRqXoKPh2MzxyUM",
 	authDomain: "digitrawebsite.firebaseapp.com",
@@ -18,6 +23,7 @@ firebase.initializeApp(firebaseConfig);
 
 const app = firebase.app();
 
+//LOGIN
 const googleLogin = () => {
 	const provider = new firebase.auth.GoogleAuthProvider();
 	var currentUser = firebase.auth().currentUser;
@@ -37,6 +43,7 @@ const googleLogin = () => {
 	}
 }
 
+//STATE CHANGES
 //Updates display name at the top right every time user logs in or out
 firebase.auth().onAuthStateChanged(function(user) {
 	if (user) { //USER SIGNED IN
@@ -50,17 +57,22 @@ firebase.auth().onAuthStateChanged(function(user) {
 		                //Used in other scenarios
 		
 		loginButton.style.color = "#4453ba"
+		loginButton.title = "LOGOUT" //the title attribute is what shows up when you hover over it
 
 	} else { //USER NOT SIGNED IN
 		const pfp = document.getElementsByClassName("pfp")[0] //pfp element on DOM
 
-		loginButton.innerHTML = "SIGN IN"
+		loginButton.innerHTML = "SIGN IN" //Changes the name from the users name to sign in
 		loggedIn = false;
-		loginButton.style.color = "#65c91a"
 
+		loginButton.style.color = "#65c91a" // Change colour back to login colour
+		loginButton.title = "SIGN IN"
+
+		//Easier to set urls from the internet than paths to files
 		pfp.style.backgroundImage = "url(https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/assets/avatar.png)"
 	}
 });
+
 
 //LOGOUT
 const googleLogout = () => {
