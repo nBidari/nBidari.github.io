@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+
+
+	<title>Stage n Machine Learning</title>
+
+	<style>
+
+		body {
+			background-color: #e0edff;
+
+			font-family: Times New Roman, Arial, Helvetica, sans-serif;
+		}
+
+		table, td, th {
+	    	border: 5px solid #4f7ee6;
+	    	padding: 10px;
+	    } 
+		
+		.home {
+
+	    	position: fixed;
+	    	top: 10px;
+	    	right: 10px;
+	    	z-index: 2;
+		}
+
+		.btn {
+			background-color: lightgrey;
+		    border-radius: 20px;
+		    font-size: 20px;
+
+		}
+
+		.center {
+    		display: block;
+    		margin-left: auto;
+    		margin-right: auto;
+    		width: 100%;
+ 		}
+
+ 		#dataButton {
+ 			position: fixed;
+ 			top: 10px;
+ 			right: 100px;
+ 			z-index: 2;
+ 		}
+
+ 		#dataTable {
+ 			z-index: 3;
+
+ 			visibility: hidden;
+ 			float: center;
+
+ 			font-family: 'Staatliches', cursive;
+ 			font-size: 20px;
+ 		}
+
+ 		#dataTablePosition {
+ 			position: relative;
+ 			left: 200px;
+ 		}
+
+ 		#foodPictureBorder {
+ 			position: absolute;
+ 			top: 40px;
+
+ 			width: auto;
+ 			height: auto;
+ 		}
+
+ 		#foodPicture {
+
+ 			width: 70%;
+ 			height: auto;
+
+ 			display: block;
+      		margin-left: auto;
+      		margin-right: auto;
+
+      		padding: 10px;
+ 			border-width: 10px;
+ 			border-style: solid;
+ 			border-color: #80b3ff;
+ 			border-image-outset: 10px;
+
+
+
+ 		}
+
+ 		hr {
+			height: 20px;
+			background: url(http://ibrahimjabbari.com/english/images/hr-11.png) 
+
+		repeat-x 0 0;
+    	border: 0;
+
+		}
+
+	</style>
+</head>
+<body>
+
+<div class = "home">
+    <form action = "../WRindex.html">
+      <input class = "btn" type="submit" value = "HOME">
+    </form>
+</div>
+
+<div id = "dataButton">
+	<input class = "btn" type="submit" value="WHAT ARE MY RESULTS?" onclick = dataAlert()>
+</div>
+
+<div class = "center">
+	<img id = "foodPicture" src="https://samples.clarifai.com/food.jpg">
+</div>
+
+<hr>
+<div id = "dataTablePosition">
+	<table id = "dataTable">
+		<tr style = "font-size: 25px">
+			<td>Ingredient</th>
+			<td>Probability</th>
+		</tr>
+	</table>
+</div>
+
+</table>
+
+
+	<script>
+
+		const app = new Clarifai.App({
+		 apiKey: '16c82e7df86846feb7d9b7ea4bdd61a9'
+		});
+
+		var specData
+		var responseList
+
+		var dataName = []
+		var dataValue = []
+
+		var hasDataBeenDisplayed = false
+
+		function capitalizeFirstLetter(string) {
+   			return string.charAt(0).toUpperCase() + string.slice(1);
+		}
+
+		app.models.predict("bd367be194cf45149e75f01d59f77ba7", "https://samples.clarifai.com/food.jpg").then(
+	    function(response) {
+	      // do something with response
+	      responseList = response
+	      console.log(responseList)
+
+	    },
+	    function(err) {
+	      // there was an error
+
+	      console.log("INVALID")
+	    }
+  			);
+
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		function dataAlert() {
+
+			document.getElementById("dataTable").style.visibility = "visible"
+
+			var table = document.getElementById("dataTable")
+
+			var row
+			var nameCell
+			var valueCell
+
+
+			if (hasDataBeenDisplayed == false) {
+				
+				document.getElementById("dataTable").style.fontSize = "20px"
+
+				for (var i = 0; i < 20; i++) {
+
+					row = table.insertRow(1)
+					nameCell = row.insertCell(0)
+					valueCell = row.insertCell(1)
+					
+					dataName.push(capitalizeFirstLetter(responseList.rawData.outputs[0].data.concepts[i].name))
+					dataValue.push(Math.round(responseList.rawData.outputs[0].data.concepts[i].value * 10000)/100)
+
+					nameCell.innerHTML = dataName[i]
+					nameCell.style.display = "block"
+
+					valueCell.innerHTML = dataValue[i]
+				}
+
+				hasDataBeenDisplayed = true
+
+				document.getElementById("dataTable").scrollIntoView()
+
+			} else {
+				document.getElementById("dataTable").scrollIntoView()
+				alert("Data has already been displayed!")
+			}
+
+			
+
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>

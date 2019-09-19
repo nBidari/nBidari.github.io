@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stage 4 JSON Activity</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<style>
+
+		.home {
+
+	    	position: fixed;
+	   		top: 10px;
+	    	right: 10px;
+	    	z-index: 2;
+	    }
+
+		.btn {
+	    	background-color: lightgrey;
+	    	border-radius: 20px;
+	    	font-size: 20px;
+
+		}
+
+		
+        #div1 {
+            background: blue;
+            height: 50px;
+            width: 0px;
+            border-radius: 10px;
+
+        }
+
+     
+        #div2 {
+            background: red;
+            height: 50px;
+            width: 0px;
+            border-radius: 10px;
+        }
+        #div3 {
+            background: green;
+            height: 50px;
+            width: 0px;
+            border-radius: 10px;
+        }
+
+        p {
+        	font-size: 20px;
+        	line-height: 50px;
+        	margin-left: 30px;
+
+        }
+
+
+	</style>
+
+</head>
+<body>
+
+
+<div class = "home">
+    <form action = "../WRindex.html">
+      <input class = "btn" type="submit" value = "HOME">
+    </form>
+</div>
+
+<h1>HIV Infection Rates Compared Proportionally By Country<h1>
+
+<div id = "div1"><p id = "p1"></p>
+   </div>
+<div id = "div2"><p id = "p2"></p>
+   </div>
+<div id = "div3"><p id = "p3"></p>
+   </div>
+
+<script>
+
+	
+   
+   var myData = "";
+   var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json';
+
+    //The $ sign is a way of accessing your JQuery functions.  In this case
+    //we are accessing the function getJSON. We set the URL to the address
+    //and data is the variable that generates the information
+    $.getJSON(staticUrl, function(data) {
+        
+        //the window object contains all the information about the current tab. 
+    	iw = window.innerWidth - 100; //access the width of the inner window
+        
+       
+
+        country1 = data.fact[1].Value;
+        val1 = parseInt(country1.substring(0,country1.indexOf("[")).replace(" ",""))
+
+        country2 = data.fact[2].Value;
+        val2 = parseInt(country2.substring(0,country2.indexOf("[")).replace(" ",""));
+        
+        country3 = data.fact[4].Value;
+        val3 = parseInt(country3.substring(0,country3.indexOf("[")).replace(" ",""));
+
+        largest = Math.max(val1,val2,val3);
+
+        val1s = (val1/largest)*iw;
+        val2s = (val2/largest)*iw;
+        val3s = (val3/largest)*iw;
+        
+        document.getElementById("div1").style.width = val1s+"px";
+		document.getElementById("div2").style.width = val2s+"px";
+		document.getElementById("div3").style.width = val3s+"px";
+
+		document.getElementById("p1").innerHTML = "<pre>" + data.fact[1].dims.COUNTRY + " : "+val1+"</pre>"
+		document.getElementById("p2").innerHTML = "<pre>" + data.fact[2].dims.COUNTRY + " : "+val2+"</pre>"
+		document.getElementById("p3").innerHTML = "<pre>" + data.fact[4].dims.COUNTRY + " : "+val3+"</pre>"
+
+
+
+
+
+    });
+    
+
+
+</script>
+
+
+</body>
+</html>

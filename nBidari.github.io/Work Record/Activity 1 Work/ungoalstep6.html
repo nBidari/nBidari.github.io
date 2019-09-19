@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>UN Goals Step 6</title>
+
+<style>
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	}
+
+  .home {
+
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+  }
+
+  .btn {
+    background-color: lightgrey;
+    border-radius: 20px;
+    font-size: 20px;
+
+  }
+
+	.flip-box {
+	  background-color: transparent;
+	  width: 300px;
+	  height: 300px;
+	  perspective: 1000px;
+	}
+
+	.flip-box-inner {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  transition: transform 0.8s;
+	  transform-style: preserve-3d;
+	}
+
+	.flip-box:hover .flip-box-inner {
+	  transform: rotateY(180deg);
+	}
+
+	.flip-box-front, .flip-box-back {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  backface-visibility: hidden;
+	}
+
+	.flip-box-front {
+	  background-color: #bbb;
+	  color: black;
+	}
+
+	.flip-box-back {
+	  background-color: black;
+	  color: white;
+	  transform: rotateY(180deg);
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    align-content: center;
+    justify-content: center;
+    margin-top: 190px;
+  }
+
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 5px;
+    padding: 15px;
+    font-size: 22px;
+  }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+  }
+
+    .topbar {
+
+      overflow-color: white;
+      background-color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1;
+  }
+
+</style>
+
+
+</head>
+
+
+
+
+
+<body>
+
+<div class = "topbar">  
+  <picture>
+    <source media="(min-width: 940px)" srcset="images/logoHorizontal.png">
+    <img class="center" src="images/logoSquare.png" alt="Flowers" style="width:auto;">
+  </picture>
+</div>
+
+<div class = "home">
+    <form action = "../WRindex.html">
+      <input class = "btn" type="submit" value = "HOME">
+    </form>
+</div>
+
+<div class = "flex-container">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals1.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #eb1c2d">
+        <h3>No Poverty</h3>
+        <p>Is Socialism the solution?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals2.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #d3a029">
+        <h3>Zero Hunger</h3>
+        <p>What is a sustainable way to grow food?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals3.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #279b48">
+        <h3>Good Health and Well-Being</h3>
+        <p>Are anti-vaxxers dangerous to vaxxers?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals4.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #c31f33">
+        <h3>Quality Education</h3>
+        <p>Should the city provide tuition?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals5.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #ef402b">
+        <h3>Gender Equality</h3>
+        <p>Is the gender wage gap real?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals6.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #00aed9">
+        <h3>Clean Water and Sanitation</h3>
+        <p>Should developed countries provide filtering to less developed countries?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals7.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #fdb713">
+        <h3>Affordable and Clean Energy</h3>
+        <p>Should the government be obligated to provide compensation for those who are using clean energy?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals8.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #8f1838">
+        <h3>Decent Work and Economic Growth</h3>
+        <p>Should the minimum wage be decreased or increased?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals9.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #f36d25">
+        <h3>Industry, Innovation and Infastructure</h3>
+        <p>Should military budgets be allocated to building infastructure?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals10.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #e11484">
+        <h3>Reduced Inequalities</h3>
+        <p>Are income inequalities permanent?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals11.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #f99d26">
+        <h3>Sustainable Cities and Communities</h3>
+        <p>Is gentrification dangerous to city and community sustainablity?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals12.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #cf8d2a">
+        <h3>Responsible Consumption and Production</h3>
+        <p>Is recycling worth the energy cost?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals13.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #48773e">
+        <h3>Climate Action</h3>
+        <p>Are we past the point of no return of climate change?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals14.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #007dbc">
+        <h3>Life Below Water</h3>
+        <p>How can we reduce overfishing in international waters?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals15.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #3eb049">
+        <h3>Life on Land</h3>
+        <p>How are mankinds actions causing life to disappear on earth?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals16.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #02558b">
+        <h3>Piece, Justice and Strong Institutions</h3>
+        <p>How can we prevent enforce international treaties, while keeping both nation's economic and social integrity?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/UNSustGoals17.png" alt="Avatar" style = "width: 300px; height: 300px;"/>
+      </div>
+      <div class="flip-box-back" style="background-color: #183668">
+        <h3>Partnership for the Goals</h3>
+        <p>Are trade deals damaging to the economy?</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

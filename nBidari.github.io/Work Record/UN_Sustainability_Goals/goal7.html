@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- My Files -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="animate.css">
+	<link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
+
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<!-- P5.js -->
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+
+	<title>Goal 7!</title>
+
+	<script> 
+		$(function(){
+		  $("#header").load("jqueryImports/header.html");
+		  $("#footer").load("jqueryImports/footer.html");
+		});
+	</script> 
+</head>
+
+<body>
+
+<!--Header-->
+<div id="header"></div>
+
+<div id="content">
+	<!--Introduction-->
+	<div id="intro">
+		<center><p style="text-align: left; text-indent: 5%; margin-bottom: 5px;">Affordable and clean energy is the idea that as the global population rises, so should the supply. From 1990-2010 the quantity of people with access to electricity increase by 1.7 billion people. The creation of electricity depends on fossil fuels, which cause the emission of greenhouse gases. This calls for the need for cleaner solutions which are also affordable enough for the ever increasing population and powerful enough to produce enough electricity for billions more people over the years. One in seven people lack access to electricity, for reference to what would need to be done soon. The United Nations aims to invest in clean energy (no greenhouse gas emissions) including solar wind and thermal. This will require extensive infrastructure and land to be able to produce enough electricity, at least by 2030. Furthermore, this will require advancements to current technology, especially a large breakthrough technology. As of now, we are very far behind on the subject of clean energy. Our population is expanding rapidly, too rapidly for how fast we are providing electricity for ourselves, however only in our current technological state. With breakthrough technology, we will be able to catch and make up for lost time.</p>
+
+		<p style="text-align: left; text-indent: 5%; margin-top: 0px; margin-bottom: 5px;">The UN hopes to increase access to electricity <b>equally</b>, as well as making it clean, worldwide!</p>
+
+		<p style="text-align: left; text-indent: 5%; margin-top: 0px; font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</center>
+	</div>
+
+	<!--Interactivities-->
+	<div id="interactivities">
+		<!--Activity Bar-->
+		<center><div id="activityBar">
+			<input type="button" class="activityBarButton" value="Ambient Air Pollution">
+		</div></center>
+
+		<div id="ambientAirGraph-container">
+			<div id="ambientAirGraph"></div>
+		</div>
+	</div>
+</div>
+
+<!--Footer-->
+<div id="footer"></div>
+
+<br><br><br><br><br>
+
+<script>
+	var footer;
+	footer = document.getElementById("footer");
+
+	window.onload = function() {
+		footer.style.webkitAnimationPlayState = "running";
+	};
+
+	function turnOffAnimation() {
+		footer.style.webkitAnimationPlayState = "paused";
+		console.log("animation paused")
+	}
+</script>
+
+<script src="ambientAirGraph.js"></script>
+</body>
+</html>

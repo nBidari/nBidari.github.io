@@ -1,0 +1,1578 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 },
+                 {
+                   "label": "COUNTRY",
+                   "display": "Country"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "COUNTRY": "Afghanistan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Albania",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1400 [1300-1400]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Algeria",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "14 000 [13 000-15 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Andorra",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Angola",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "310 000 [260 000-360 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Antigua and Barbuda",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Argentina",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "120 000 [110 000-130 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Armenia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "3400 [2800-4300]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Australia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "26 000 [23 000-29 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Austria",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "7400 [6600-8200]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Azerbaijan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "8000 [6100-10 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bahamas",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "5300 [4600-6000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bahrain",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "<500 [<500-<500]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bangladesh",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "13 000 [11 000-15 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Barbados",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2700 [2400-3000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belarus",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "24 000 [18 000-33 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belgium",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Belize",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "4500 [4000-58 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Benin",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "70 000 [46 000-99 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bhutan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bolivia (Plurinational State of)",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "21 000 [13 000-31 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bosnia and Herzegovina",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Botswana",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "380 000 [340 000-410 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brazil",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "860 000 [630 000-1 100 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Brunei Darussalam",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Bulgaria",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2800 [2600-3000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burkina Faso",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "94 000 [72 000-120 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Burundi",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "78 000 [63 000-93 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cabo Verde",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2400 [2000-2900]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cambodia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "67 000 [58 000-79 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cameroon",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "510 000 [430 000-600 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Canada",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Central African Republic",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "110 000 [96 000-130 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chad",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "110 000 [94 000-140 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Chile",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "67 000 [58 000-76 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "China",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Colombia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "150 000 [120 000-180 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Comoros",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "<200 [<200-<500]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Congo",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "100 000 [85 000-110 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cook Islands",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Costa Rica",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "13 000 [11 000-14 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Côte d'Ivoire",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "500 000 [350 000-690 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Croatia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cuba",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "30 000 [26 000-33 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Cyprus",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "890 [820-970]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Czechia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2900 [2500-3300]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Democratic People's Republic of Korea",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Democratic Republic of the Congo",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "390 000 [310 000-470 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Denmark",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "6400 [5900-6900]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Djibouti",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "9100 [6300-13 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominica",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Dominican Republic",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "67 000 [52 000-85 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ecuador",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "36 000 [25 000-65 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Egypt",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "16 000 [15 000-18 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "El Salvador",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "25 000 [22 000-27 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Equatorial Guinea",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "53 000 [44 000-68 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eritrea",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "14 000 [10 000-19 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Estonia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "5700 [5100-6400]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Eswatini",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "210 000 [190 000-220 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ethiopia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "610 000 [470 000-780 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Fiji",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Finland",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "France",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "200 000 [170 000-240 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gabon",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "56 000 [49 000-65 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Gambia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "21 000 [17 000-25 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Georgia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "11 000 [8200-14 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Germany",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "91 000 [80 000-100 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ghana",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "310 000 [260 000-370 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Greece",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "14 000 [13 000-16 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Grenada",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guatemala",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "46 000 [40 000-52 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "120 000 [97 000-140 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guinea-Bissau",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "40 000 [32 000-45 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Guyana",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "8200 [7600-9200]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Haiti",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "150 000 [130 000-180 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Honduras",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "22 000 [17 000-27 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Hungary",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2800 [2400-3200]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iceland",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "India",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2 100 000 [1 500 000-3 000 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Indonesia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "630 000 [540 000-740 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iran (Islamic Republic of)",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "60 000 [31 000-110 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Iraq",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ireland",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "7200 [6500-8100]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Israel",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Italy",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "130 000 [110 000-150 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jamaica",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "34 000 [28 000-39 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Japan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "28 000 [24 000-32 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Jordan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kazakhstan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "27 000 [18 000-28 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kenya",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1 500 000 [1 300 000-1 800 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kiribati",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kuwait",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "540 [<500-640]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Kyrgyzstan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "7600 [5500-10 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lao People's Democratic Republic",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "12 000 [10 000-14 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Latvia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lebanon",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2200 [1900-2500]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lesotho",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "320 000 [290 000-340 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Liberia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "40 000 [32 000-50 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Libya",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Lithuania",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2800 [2500-3000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Luxembourg",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1100 [940-1200]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Madagascar",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "35 000 [29 000-45 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malawi",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1 000 000 [980 000-1 100 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malaysia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "87 000 [76 000-99 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Maldives",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mali",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "130 000 [110 000-160 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Malta",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Marshall Islands",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "9000 [6400-13 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritania",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mauritius",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mexico",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "230 000 [210 000-260 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Micronesia (Federated States of)",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Monaco",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mongolia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "650 [540-750]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Montenegro",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "<500 [<500-<500]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Morocco",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "20 000 [16 000-27 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Mozambique",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2 100 000 [1 800 000-2 500 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Myanmar",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "220 000 [200 000-260 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Namibia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "200 000 [180 000-210 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nauru",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nepal",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "31 000 [27 000-36 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Netherlands",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "23 000 [21 000-25 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "New Zealand",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "3700 [<200-13 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nicaragua",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "9000 [7000-12 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niger",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "36 000 [31 000-41 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Nigeria",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "3 100 000 [2 100 000-4 400 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Niue",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Norway",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "5100 [4200-5700]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Oman",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Pakistan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "150 000 [130 000-170 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Palau",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Panama",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "25 000 [23 000-27 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Papua New Guinea",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "48 000 [43 000-52 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Paraguay",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "20 000 [13 000-43 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Peru",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "72 000 [58 000-100 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Philippines",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "68 000 [61 000-76 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Poland",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Portugal",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "40 000 [35 000-44 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Qatar",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "<500 [<500-<500]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Korea",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Republic of Moldova",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "15 000 [10 000-21 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Romania",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "16 000 [15 000-19 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Russian Federation",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1 000 000 [780 000-1 200 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Rwanda",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "220 000 [200 000-250 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Kitts and Nevis",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Lucia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saint Vincent and the Grenadines",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Samoa",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "San Marino",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sao Tome and Principe",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Saudi Arabia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Senegal",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "43 000 [36 000-51 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Serbia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "2700 [2000-3400]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Seychelles",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sierra Leone",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "61 000 [51 000-73 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Singapore",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "7600 [6300-8900]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovakia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "870 [650-1400]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Slovenia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "970 [710-1300]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Solomon Islands",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Somalia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "11 000 [10 000-12 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "South Africa",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "7 200 000 [6 600 000-7 900 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "South Sudan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "180 000 [130 000-250 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Spain",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "150 000 [140 000-170 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sri Lanka",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "3500 [3000-4200]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sudan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "51 000 [27 000-84 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Suriname",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "4800 [4300-6300]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Sweden",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Switzerland",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Syrian Arab Republic",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tajikistan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "15 000 [11 000-21 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Thailand",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "440 000 [390 000-510 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "The former Yugoslav republic of Macedonia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "<500 [<500-<500]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Timor-Leste",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Togo",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "110 000 [70 000-150 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tonga",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Trinidad and Tobago",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "11 000 [9600-12 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tunisia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "3000 [2300-4200]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Turkey",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Turkmenistan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Tuvalu",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uganda",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1 300 000 [1 300 000-1 400 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Ukraine",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "240 000 [230 000-260 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Arab Emirates",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Kingdom of Great Britain and Northern Ireland",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United Republic of Tanzania",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1 500 000 [1 300 000-1 600 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "United States of America",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uruguay",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "13 000 [11 000-15 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Uzbekistan",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "52 000 [42 000-62 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Vanuatu",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Venezuela (Bolivarian Republic of)",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Viet Nam",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "250 000 [220 000-280 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Yemen",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "No data"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zambia",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1 100 000 [1 100 000-1 200 000]"
+              },
+              {
+                "dims": {
+                          "COUNTRY": "Zimbabwe",
+                          "GHO": "Estimated number of people (all ages) living with HIV",
+                          "YEAR": "2017"
+                        },
+                "Value": "1 300 000 [1 200 000-1 500 000]"
+              }
+      ]
+}

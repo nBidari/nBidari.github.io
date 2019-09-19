@@ -1,16 +1,10 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "./nBidari.github.io",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }

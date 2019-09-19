@@ -1,0 +1,138 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 },
+                 {
+                   "label": "UNREGION",
+                   "display": "UN Region"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population)",
+                          "YEAR": "2016"
+                        },
+                "Value": "96.7"
+              },
+              {
+                "dims": {
+                          "REGION": "Africa",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)",
+                          "YEAR": "2016"
+                        },
+                "Value": "180.9"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population)",
+                          "YEAR": "2016"
+                        },
+                "Value": "32.2"
+              },
+              {
+                "dims": {
+                          "REGION": "Americas",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)",
+                          "YEAR": "2016"
+                        },
+                "Value": "29.7"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population)",
+                          "YEAR": "2016"
+                        },
+                "Value": "125.1"
+              },
+              {
+                "dims": {
+                          "REGION": "South-East Asia",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)",
+                          "YEAR": "2016"
+                        },
+                "Value": "165.8"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population)",
+                          "YEAR": "2016"
+                        },
+                "Value": "60.8"
+              },
+              {
+                "dims": {
+                          "REGION": "Europe",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)",
+                          "YEAR": "2016"
+                        },
+                "Value": "36.3"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population)",
+                          "YEAR": "2016"
+                        },
+                "Value": "75.2"
+              },
+              {
+                "dims": {
+                          "REGION": "Eastern Mediterranean",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)",
+                          "YEAR": "2016"
+                        },
+                "Value": "125.0"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population)",
+                          "YEAR": "2016"
+                        },
+                "Value": "118.9"
+              },
+              {
+                "dims": {
+                          "REGION": "Western Pacific",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)",
+                          "YEAR": "2016"
+                        },
+                "Value": "102.8"
+              },
+              {
+                "dims": {
+                          "REGION": "(WHO) Global",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population)",
+                          "YEAR": "2016"
+                        },
+                "Value": "94.8"
+              },
+              {
+                "dims": {
+                          "REGION": "(WHO) Global",
+                          "GHO": "Ambient and household air pollution attributable death rate (per 100 000 population, age-standardized)",
+                          "YEAR": "2016"
+                        },
+                "Value": "114.1"
+              }
+      ]
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stage 3 JSON Activity</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<style>
+
+		.home {
+
+	    	position: fixed;
+	   		top: 10px;
+	    	right: 10px;
+	    	z-index: 2;
+	    }
+
+		.btn {
+	    	background-color: lightgrey;
+	    	border-radius: 20px;
+	    	font-size: 20px;
+
+		}
+
+	</style>
+	
+</head>
+<body>
+
+<div class = "home">
+    <form action = "../WRindex.html">
+      <input class = "btn" type="submit" value = "HOME">
+    </form>
+</div>
+
+<script>
+
+	var myData = "";
+	var staticUrl = 'https://raw.githubusercontent.com/nBidari/nBidari.github.io/master/Activity%202/data/data.json'; 
+
+	$.getJSON(staticUrl, function(data) {
+	        console.log(data)
+
+	        //ALBANIA
+	        console.log(data.fact[1].dims.COUNTRY)
+		    console.log(data.fact[1].dims.GHO)
+		    console.log(data.fact[1].dims.YEAR)
+
+		    //BREAK
+		    console.log(" ")
+		    console.log("   ")
+		    console.log("    ")
+
+		    //CANADA
+		    console.log(data.fact[31].dims.COUNTRY)
+		    console.log(data.fact[31].dims.GHO)
+		    console.log(data.fact[31].dims.YEAR)
+
+
+	    });
+
+
+</script>
+
+
+</body>
+</html>

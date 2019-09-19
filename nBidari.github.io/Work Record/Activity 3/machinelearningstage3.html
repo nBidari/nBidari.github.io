@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+
+	<title>Machine Learning Stage 3</title>
+
+    <style>
+
+        #wrapper {   
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            background-color: red;
+            min-width: 420px;
+            max-width: 1040px;
+            margin: 0 auto;
+       
+        }
+
+        #input {
+      
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 600px;
+            background-color: green;
+            min-width: 400px;
+            max-width: 500px;
+            border: solid;
+            margin: 0 auto;
+
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        #output {
+
+            width: 50%;
+            height: 600px;
+            background-color: blue;
+            min-width: 400px;
+            max-width: 500px;
+            border: solid;
+            margin: 0 auto;
+
+            text-align: center;
+
+        }
+
+        button {
+            width: 300px;
+            height: 30px;
+        }
+        .home {
+
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 2000;
+        }
+
+        .btn {
+            background-color: lightgrey;
+            border-radius: 20px;
+            font-size: 20px;
+
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class = "home">
+    <form action = "../WRindex.html">
+        <input class = "btn" type="submit" value = "HOME">
+    </form>
+</div>
+
+<div id = "wrapper">
+    <div id = "input">
+        <h1> INPUT PHOTO </h1>
+        <input type= "text" style = "width: 90%; font-size: 1em;" id="userinput">
+        <button id="enter">Enter</button>
+        
+        <select id = "dropdown" style = "width: 90%">
+           <option value="ti1">Test Image 1</option>
+           <option value="ti2">Test Image 2</option>
+           <option value="ti3">Test Image 3</option>
+           <option value="ti4">Test Image 4</option>
+           <option value="ti5">Test Image 5</option>
+           <option value ="custom" disabled>CUSTOM</option>
+        </select>
+              
+        <img id = "picture" src="http://farm1.static.flickr.com/228/499181350_b01a280789.jpg" alt="Smiley face" width="300" height=auto>
+        <button id="process">Process</button>
+    
+    </div>
+
+    <div id = "output">
+        <h1> PREDICTION </h1>
+        <ul></ul>
+    </div>
+</div>
+
+
+    <script>
+    	const app = new Clarifai.App({ 
+        	apiKey: '16c82e7df86846feb7d9b7ea4bdd61a9' 
+    	}); 
+
+    	app.models.predict("bd367be194cf45149e75f01d59f77ba7", "https://samples.clarifai.com/food.jpg").then( 
+        function(response) { 
+            // do something with response
+            console.log(response) 
+        },
+        function(err) { 
+            // there was an error 
+        } 
+    );
+
+</script>
+</body>
+</html>
